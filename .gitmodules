@@ -1,0 +1,3 @@
+[submodule "davis"]
+	path = davis
+	url = git@github.com:davisvideochallenge/davis.git
