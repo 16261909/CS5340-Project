@@ -1,4 +1,8 @@
 testc/
 testd/
-train/
+trainval/
+result/
+rough_annotation/
 .idea/
+flow/
+davis2017-evaluation/results/
