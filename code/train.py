@@ -4,21 +4,22 @@ from time import sleep
 import matplotlib.pyplot as plt
 import cv2
 import numpy as np
+import random
 import torch
 from torchvision import transforms
 from torch.utils.data import DataLoader, Dataset
 import PIL.Image as Image
-import torchvision.models as models
 
 from utilities import *
 from resnet import *
 from config import *
 
 class CustomDataset(Dataset):
-    def __init__(self, image_path, mask_path, transform=None, num_samples=1000):
+    def __init__(self, image_path, mask_path, image_transform=None, mask_transform=None, num_samples=1000):
         self.image_path = image_path
         self.mask_path = mask_path
-        self.transform = transform
+        self.image_transform = image_transform
+        self.mask_transform = mask_transform
         self.num_samples = num_samples
 
     def __len__(self):
@@ -27,24 +28,36 @@ class CustomDataset(Dataset):
     def __getitem__(self, idx):
         image = Image.open(self.image_path)
         mask = Image.open(self.mask_path)
-        if self.transform:
-            seed = np.random.randint(2147483647)
-            random.seed(seed)
-            image = self.transform(image)
-            random.seed(seed)
-            mask = self.transform(mask)
+        if self.image_transform and self.mask_transform:
+            seed = np.random.randint(42)
+            torch.manual_seed(seed)
+            image = self.image_transform(image)
+            torch.manual_seed(seed)
+            mask = self.mask_transform(mask)
         return image, mask
 
 
-data_transforms = transforms.Compose([
+mask_transforms = transforms.Compose([
+    transforms.Resize((256, 256), interpolation=Image.NEAREST),
     transforms.RandomHorizontalFlip(),
     transforms.RandomVerticalFlip(),
     transforms.RandomRotation(20),
-    transforms.RandomAffine(degrees=0, translate=(0.05, 0.05), scale=(0.95, 1.05), shear=10),
+    transforms.RandomAffine(degrees=0, translate=(0.05, 0.05), scale=(0.95, 1.05), shear=10,  interpolation=Image.NEAREST),
     transforms.RandomPerspective(distortion_scale=0.5, p=0.5),
+    transforms.RandomCrop((224, 224)),
     transforms.ToTensor()
 ])
 
+image_transforms = transforms.Compose([
+    transforms.Resize((256, 256), interpolation=Image.BILINEAR),
+    transforms.RandomHorizontalFlip(),
+    transforms.RandomVerticalFlip(),
+    transforms.RandomRotation(20),
+    transforms.RandomAffine(degrees=0, translate=(0.05, 0.05), scale=(0.95, 1.05), shear=10, interpolation=Image.BILINEAR),
+    transforms.RandomPerspective(distortion_scale=0.5, p=0.5),
+    transforms.RandomCrop((224, 224)),
+    transforms.ToTensor()
+])
 
 
 if __name__ == '__main__':
@@ -74,7 +87,7 @@ if __name__ == '__main__':
         if i == 0:
             continue
         print(train_list[i])
-        image_path = os.path.join(train_image_root, val_list[i] + '/00000.png')
+        image_path = os.path.join(train_image_root, val_list[i] + '/00000.jpg')
         mask_path = os.path.join(train_mask_root, val_list[i] + '/00000.png')
         result_path = os.path.join(result_root, val_list[i])
         model_save_path = os.path.join(models_root, val_list[i] + '.pt')
@@ -91,12 +104,17 @@ if __name__ == '__main__':
 
         model = MyResNet(len(color_to_gray_map))
         mask = np.expand_dims(mask[0], axis=-1)
+
         input = np.concatenate((image, mask), axis=2)
         input = torch.tensor(input).permute(2, 0, 1).unsqueeze(0).float()
 
+        dataset = CustomDataset(image_path, mask_path, image_transform=image_transforms, mask_transform=mask_transforms, num_samples=1000)
+        dataloader = DataLoader(dataset, batch_size=1, shuffle=True)
 
-
-        dataset = CustomDataset(image_path, mask_path,
+        for image, mask in dataloader:
+            print(image.shape, mask.shape)
+            print_image(image[0].permute(1, 2, 0).numpy())
+            print_image(mask[0].permute(1, 2, 0).numpy())
 
         for i in range(train_epoch):
             pass
