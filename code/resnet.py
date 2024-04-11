@@ -1,13 +1,13 @@
 import torch
 import torchvision.models as models
 import torch.nn as nn
-from segmentation_models_pytorch import Unet
-
+from segmentation_models_pytorch import DeepLabV3Plus
+import segmentation_models_pytorch as smp
 
 class MyResNet(nn.Module):
     def __init__(self, classes):
         super(MyResNet, self).__init__()
-        self.resnet = Unet('resnet34', in_channels=4, classes = classes, encoder_weights='imagenet')
+        self.resnet = DeepLabV3Plus(encoder_name='resnet34', in_channels=4, classes=classes, encoder_weights='imagenet', activation='softmax')
 
 
     def forward(self, x):

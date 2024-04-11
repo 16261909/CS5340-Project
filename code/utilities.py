@@ -22,16 +22,15 @@ def convert_to_gray_mask(mask_frames):
     gray_to_color_map = {}
     current_label = 0
 
-    gray_masks = np.empty((mask_frames.shape[0], mask_frames.shape[1], mask_frames.shape[2]), dtype=np.uint8)
+    gray_masks = np.empty((mask_frames.shape[0], mask_frames.shape[1]), dtype=np.uint8)
     for i in range(mask_frames.shape[0]):
         for j in range(mask_frames.shape[1]):
-            for k in range(mask_frames.shape[2]):
-                color = tuple(mask_frames[i, j, k])
+                color = tuple(mask_frames[i, j])
                 if color not in color_to_gray_map:
                     color_to_gray_map[color] = current_label
                     gray_to_color_map[current_label] = color
                     current_label += 1
-                gray_masks[i, j, k] = color_to_gray_map[color]
+                gray_masks[i, j] = color_to_gray_map[color]
 
     return gray_masks, color_to_gray_map, gray_to_color_map
 
@@ -67,4 +66,12 @@ def read_flo_file(file_path):
 def print_image(image, str='image'):
     plt.imshow(image)
     plt.axis('off')
+    plt.show()
+
+def print_images(images, str='image'):
+    plt.figure(figsize=(15, 5))
+    for i in range(len(images)):
+        plt.subplot(1, len(images), i+1)
+        plt.imshow(images[i])
+        plt.axis('off')
     plt.show()
