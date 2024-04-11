@@ -1,8 +1,10 @@
 import numpy as np
 import cv2
+import matplotlib.pyplot as plt
 
-time_base = 0.9
-time_min = 0.3
+from config import *
+
+
 
 
 def restore_color_mask(gray_masks, gray_to_color_map):
@@ -61,3 +63,8 @@ def read_flo_file(file_path):
         height = np.fromfile(f, np.int32, count=1)[0]
         data = np.fromfile(f, np.float32, count=width * height * 2)
         return data.reshape((height, width, 2))
+
+def print_image(image, str='image'):
+    plt.imshow(image)
+    plt.axis('off')
+    plt.show()

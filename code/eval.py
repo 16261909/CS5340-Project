@@ -14,6 +14,7 @@ ICM_iter = 4
 
 
 if __name__ == '__main__':
+
     train_imageset_path = '../trainval/DAVIS/ImageSets/2017/train.txt'
     val_imageset_path = '../trainval/DAVIS/ImageSets/2017/val.txt'
     testd_imageset_path = '../testd/DAVIS/ImageSets/2017/test-dev.txt'
@@ -51,7 +52,7 @@ if __name__ == '__main__':
         flow_path = os.path.join(train_flow_root, val_list[i])
 
         image_list = sorted(os.listdir(image_path))
-        image_list = image_list[:10]
+        image_list = image_list[:2]
 
         mask = cv2.imread(mask_path)
         mask = np.expand_dims(mask, axis=0)
@@ -86,7 +87,7 @@ if __name__ == '__main__':
             flo[i] = cv2.calcOpticalFlowFarneback(gray_imgs[i], gray_imgs[i + 1], None, 0.5, 3, 15, 3, 5, 1.2, 0)
             flo[i] = filter_unreliable_flow(flo[i])
 
-        init(flo)
+        init(flo, mask)
 
         print('Start ICM...')
 
@@ -96,14 +97,14 @@ if __name__ == '__main__':
                     for y in range(mask.shape[2]):
                         idx = (t, x, y)
                         e_now = energy(mask, osvos_mask, idx)
-                        diff_update(t, (x, y), -1)
+                        diff_update(mask, t, (x, y), -1)
                         mask[idx] = 1 - mask[idx]
-                        diff_update(t, (x, y), 1)
+                        diff_update(mask, t, (x, y), 1)
                         e_nxt = energy(mask, osvos_mask, idx)
                         if e_now < e_nxt:
-                            diff_update(t, (x, y), -1)
+                            diff_update(mask, t, (x, y), -1)
                             mask[idx] = 1 - mask[idx]
-                            diff_update(t, (x, y), 1)
+                            diff_update(mask, t, (x, y), 1)
 
         # write
         if os.path.exists(result_path):

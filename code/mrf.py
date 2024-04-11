@@ -1,4 +1,5 @@
 import numpy as np
+from eval import *
 
 e_u_true_possibility = 0.99
 log_e_u_true_possibility = np.log(e_u_true_possibility)
@@ -14,6 +15,8 @@ flow_range = 3
 flow_out_of_uncalculated_err = -20000
 flow_out_of_range_err = -10000
 
+precomputed_positions = None
+diff_between_masks = None
 
 def filter_unreliable_flow(flow):
     flow_magnitude = np.linalg.norm(flow, axis=2)
@@ -57,8 +60,6 @@ def get_positions(flo, precomputed_positions, pos, t):
 
 def energy(mask: np.ndarray, osvos_mask: np.ndarray, idx):
 
-    global precomputed_positions, diff_between_masks
-
     if precomputed_positions is None or diff_between_masks is None:
         raise ValueError("Global variables precomputed_positions and diff_between_masks must be initialized before calling this function.")
 
@@ -79,10 +80,8 @@ def energy(mask: np.ndarray, osvos_mask: np.ndarray, idx):
     return theta_u * e_u + theta_t * e_t + theta_s * e_s
 
 
-def diff_update(t, pos, dv):
+def diff_update(mask, t, pos, dv):
     x, y = pos[0], pos[1]
-
-    global mask
 
     for dt in range(min(flow_range, t - 1)):
         if precomputed_positions[t, x, y, 0, dt, 0] == flow_out_of_range_err:
@@ -97,25 +96,28 @@ def diff_update(t, pos, dv):
             diff_between_masks[t, t + dt + 1] += dv
 
 
-def init(flo):
+def init(flo, mask):
 
     global precomputed_positions, diff_between_masks
+    shape = mask.shape
 
     print('Start init...')
 
-    precomputed_positions = np.empty((mask.shape[0], mask.shape[1], mask.shape[2], 2, flow_range, 2), dtype=tuple)
+    precomputed_positions = np.empty((shape[0], shape[1], shape[2], 2, flow_range, 2), dtype=tuple)
     precomputed_positions.fill(flow_out_of_uncalculated_err)
 
-    for t in range(mask.shape[0]):
-        for x in range(mask.shape[1]):
-            for y in range(mask.shape[2]):
+    for t in range(shape[0]):
+        for x in range(shape[1]):
+            for y in range(shape[2]):
                 neg_ret, pos_ret = get_positions(flo, precomputed_positions, (x, y), t)
                 precomputed_positions[t, x, y, 0] = neg_ret
                 precomputed_positions[t, x, y, 1] = pos_ret
 
-    diff_between_masks = np.zeros((mask.shape[0], mask.shape[0]))
+    diff_between_masks = np.zeros((shape[0], shape[0]))
 
-    for t in range(mask.shape[0]):
-        for x in range(mask.shape[1]):
-            for y in range(mask.shape[2]):
-                diff_update(t, (x, y), 1)
+    for t in range(shape[0]):
+        for x in range(shape[1]):
+            for y in range(shape[2]):
+                diff_update(mask, t, (x, y), 1)
+
+    print(precomputed_positions, diff_between_masks)
