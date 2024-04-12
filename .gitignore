@@ -1,8 +1,12 @@
 testc/
 testd/
 trainval/
+code/.ipynb_checkpoints/
+code/__pycache__/
 result/
+rough_annotation/osvos/result/
 rough_annotation/
 .idea/
 flow/
+models/
 davis2017-evaluation/results/
