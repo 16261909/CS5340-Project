@@ -38,7 +38,7 @@ train_mask_transforms = transforms.Compose([
     transforms.RandomRotation(20),
     transforms.RandomAffine(degrees=0, translate=(0.05, 0.05), scale=(0.95, 1.05), shear=10,  interpolation=Image.NEAREST),
     # transforms.RandomPerspective(distortion_scale=0.5, p=0.5),
-    transforms.RandomCrop((224, 224)),
+    transforms.RandomCrop(Resize),
     transforms.ToTensor()
 ])
 
@@ -49,18 +49,16 @@ train_image_transforms = transforms.Compose([
     transforms.RandomRotation(20),
     transforms.RandomAffine(degrees=0, translate=(0.05, 0.05), scale=(0.95, 1.05), shear=10, interpolation=Image.BILINEAR),
     # transforms.RandomPerspective(distortion_scale=0.5, p=0.5),
-    transforms.RandomCrop((224, 224)),
+    transforms.RandomCrop(Resize),
     transforms.ToTensor()
 ])
 
 val_mask_transforms = transforms.Compose([
-    transforms.Resize((256, 256), interpolation=Image.NEAREST),
-    transforms.RandomCrop((224, 224)),
+    transforms.Resize(Resize, interpolation=Image.NEAREST),
     transforms.ToTensor()
 ])
 
 val_image_transforms = transforms.Compose([
-    transforms.Resize((256, 256), interpolation=Image.NEAREST),
-    transforms.RandomCrop((224, 224)),
+    transforms.Resize(Resize, interpolation=Image.NEAREST),
     transforms.ToTensor()
 ])

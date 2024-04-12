@@ -5,6 +5,16 @@ import matplotlib.pyplot as plt
 from config import *
 
 
+def filter_unreliable_flow(flo):
+    reliable_flow = np.zeros_like(flo)
+    # using sigma detection to filter out unreliable flow
+    # FIXME: using other methods
+    for i in range(flo.shape[0]):
+        for d in range(2):
+            mean = np.mean(flo[i, ..., d])
+            std = np.std(flo[i, ..., d])
+            reliable_flow[i, ..., d] = np.where(np.abs(mean - flo[i, ..., d]) < 2 * std, flo[i, ..., d], mean)
+    return reliable_flow
 
 
 def restore_color_mask(gray_masks, gray_to_color_map):
@@ -47,6 +57,10 @@ def time_parameter(t):
     return max(np.power(time_base, t), time_min)
 
 
+def s_parameter(t):
+    return np.power(s_coefficient, t)
+
+
 def show_flow(flow):
     flow_magnitude = np.linalg.norm(flow, axis=2)
     flow_angle = np.arctan2(flow[:, :, 1], flow[:, :, 0])
@@ -61,7 +75,6 @@ def show_flow(flow):
     cv2.waitKey(0)
 
 def read_flo_file(file_path):
-    print(file_path)
     with open(file_path, 'rb') as f:
         magic = np.fromfile(f, np.float32, count=1)
         if magic != 202021.25:
@@ -100,3 +113,13 @@ def show_flo(flo):
         plt.show()
 
 
+def resize_flo(flo):
+    y_scale = Resize[0] / flo.shape[0]
+    x_scale = Resize[1] / flo.shape[1]
+
+    resized_flo = cv2.resize(flo, Resize, interpolation=cv2.INTER_NEAREST)
+
+    resized_flo[..., 0] *= x_scale
+    resized_flo[..., 1] *= y_scale
+
+    return resized_flo

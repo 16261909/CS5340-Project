@@ -1,25 +1,13 @@
 import numpy as np
 from config import *
-from utilities import time_parameter
+from utilities import time_parameter, s_parameter
 
 precomputed_positions = None
 
 
-def filter_unreliable_flow(flo):
-    reliable_flow = np.zeros_like(flo)
-    # using sigma detection to filter out unreliable flow
-    # FIXME: using other methods
-    for i in range(flo.shape[0]):
-        for d in range(2):
-            mean = np.mean(flo[i, ..., d])
-            std = np.std(flo[i, ..., d])
-            reliable_flow[i, ..., d] = np.where(np.abs(mean - flo[i, ..., d]) < 2 * std, flo[i, ..., d], mean)
-    return reliable_flow
-
-
 def get_positions(flo, precomputed_positions, pos, t):
 
-    if (precomputed_positions[t, pos[0], pos[1]] != uncalculated_err).all():
+    if (precomputed_positions[t, pos[0], pos[1]] != not_calculated_err).all():
         return precomputed_positions[t, pos[0], pos[1], 0], precomputed_positions[t, pos[0], pos[1], 1]
 
     # [-flow_range, -flow_range + 1, ..., -1, 1, ..., flow_range - 1, flow_range]
@@ -73,7 +61,7 @@ def energy(mask: np.ndarray, osvos_mask: np.ndarray, t, x, y, value):
             break
         e_t += time_parameter(t + dt + 1) * time_parameter(t) * (1 if value != mask[t + dt + 1, precomputed_positions[t, x, y, 1, dt, 0], precomputed_positions[t, x, y, 1, dt, 1]] else 0) ** 2
 
-    return theta_u * e_u + theta_t * e_t + theta_s * e_s
+    return theta_u * e_u + theta_t * e_t + theta_s * s_parameter(t) * e_s
 
 
 def init(flo, mask):
@@ -81,10 +69,8 @@ def init(flo, mask):
     global precomputed_positions
     shape = mask.shape
 
-    print('Precomputing positions from optical flow...')
-
     precomputed_positions = np.empty((shape[0], shape[1], shape[2], 2, flow_range, 2), dtype=tuple)
-    precomputed_positions.fill(uncalculated_err)
+    precomputed_positions.fill(not_calculated_err)
 
     for t in range(shape[0]):
         for x in range(shape[1]):
