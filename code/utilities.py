@@ -1,6 +1,8 @@
 import numpy as np
 import cv2
+import os
 import matplotlib.pyplot as plt
+from PIL import Image
 
 from config import *
 
@@ -73,7 +75,7 @@ def time_parameter(t):
 
 
 def s_parameter(t):
-    return np.power(s_coefficient, t)
+    return min(np.power(s_coefficient, t), time_min)
 
 
 def show_flow(flow):
@@ -138,3 +140,56 @@ def resize_flo(flo):
     resized_flo[..., 1] *= y_scale
 
     return resized_flo
+
+def generate_gif(image_path, ground_truth_path, mask_path, output_path):
+
+    frames = []
+    image_list = sorted(os.listdir(image_path))
+
+    imgs = np.zeros((len(image_list), OutputResize[1], OutputResize[0], 3), dtype=np.uint8)
+    gt = np.zeros((len(image_list), OutputResize[1], OutputResize[0], 3), dtype=np.uint8)
+    mask = np.zeros((len(image_list), OutputResize[1], OutputResize[0], 3), dtype=np.uint8)
+
+    for i in range(len(image_list)):
+        mask[i] = cv2.resize(cv2.imread(os.path.join(mask_path, f"{i:05d}.png")), OutputResize, interpolation=cv2.INTER_NEAREST)
+        imgs[i] = cv2.resize(cv2.imread(os.path.join(image_path, f"{i:05d}.jpg")), OutputResize, interpolation=cv2.INTER_NEAREST)
+        gt[i] = cv2.resize(cv2.imread(os.path.join(ground_truth_path, f"{i:05d}.png")), OutputResize, interpolation=cv2.INTER_NEAREST)
+        mask[i] = cv2.cvtColor(mask[i], cv2.COLOR_BGR2RGB)
+        imgs[i] = cv2.cvtColor(imgs[i], cv2.COLOR_BGR2RGB)
+        gt[i] = cv2.cvtColor(gt[i], cv2.COLOR_BGR2RGB)
+
+        combined = Image.new('RGB', (imgs[i].shape[1] * 3, imgs[i].shape[0]))
+        combined.paste(Image.fromarray(imgs[i]), (0, 0))
+        combined.paste(Image.fromarray(gt[i]), (imgs[i].shape[1], 0))
+        combined.paste(Image.fromarray(mask[i]), (imgs[i].shape[1] * 2, 0))
+
+        frames.append(combined)
+
+    frames[0].save(output_path, save_all=True, append_images=frames[1:], loop=0, duration=100)
+
+
+def generate_result(image_path, ground_truth_path, mask_path, output_path):
+
+    frames = []
+    image_list = sorted(os.listdir(image_path))
+
+    imgs = np.zeros((len(image_list), OutputResize[1], OutputResize[0], 3), dtype=np.uint8)
+    gt = np.zeros((len(image_list), OutputResize[1], OutputResize[0], 3), dtype=np.uint8)
+    mask = np.zeros((len(image_list), OutputResize[1], OutputResize[0], 3), dtype=np.uint8)
+
+    for i in range(len(image_list)):
+        mask[i] = cv2.resize(cv2.imread(os.path.join(mask_path, f"{i:05d}.png")), OutputResize, interpolation=cv2.INTER_NEAREST)
+        imgs[i] = cv2.resize(cv2.imread(os.path.join(image_path, f"{i:05d}.png")), OutputResize, interpolation=cv2.INTER_NEAREST)
+        gt[i] = cv2.resize(cv2.imread(os.path.join(ground_truth_path, f"{i:05d}.png")), OutputResize, interpolation=cv2.INTER_NEAREST)
+        mask[i] = cv2.cvtColor(mask[i], cv2.COLOR_BGR2RGB)
+        imgs[i] = cv2.cvtColor(imgs[i], cv2.COLOR_BGR2RGB)
+        gt[i] = cv2.cvtColor(gt[i], cv2.COLOR_BGR2RGB)
+
+        combined = Image.new('RGB', (imgs[i].shape[1] * 3, imgs[i].shape[0]))
+        combined.paste(Image.fromarray(imgs[i]), (0, 0))
+        combined.paste(Image.fromarray(gt[i]), (imgs[i].shape[1], 0))
+        combined.paste(Image.fromarray(mask[i]), (imgs[i].shape[1] * 2, 0))
+
+        frames.append(combined)
+
+    frames[0].save(output_path, save_all=True, append_images=frames[1:], loop=0, duration=150)
