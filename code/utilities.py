@@ -5,6 +5,21 @@ import matplotlib.pyplot as plt
 from config import *
 
 
+def get_map(mask, PIL_mask):
+    color_to_gray_map, gray_to_color_map = {}, {}
+    PIL_mask = np.array(PIL_mask)
+
+    for i in range(mask.shape[0]):
+        for j in range(mask.shape[1]):
+            color = tuple(mask[i, j])
+            gray = PIL_mask[i, j]
+            if color not in color_to_gray_map:
+                gray_to_color_map[gray] = color
+                color_to_gray_map[color] = gray
+
+    return color_to_gray_map, gray_to_color_map
+
+
 def filter_unreliable_flow(flo):
     reliable_flow = np.zeros_like(flo)
     # using sigma detection to filter out unreliable flow
@@ -18,41 +33,39 @@ def filter_unreliable_flow(flo):
 
 
 def restore_color_mask(gray_masks, gray_to_color_map):
-    color_masks = np.empty((gray_masks.shape[0], gray_masks.shape[1], 3), dtype=np.uint8)
-    # gray_masks.shape[0],
-    # for i in range(gray_masks.shape[0]):
-    for j in range(gray_masks.shape[0]):
-        for k in range(gray_masks.shape[1]):
-            color_masks[j, k] = gray_to_color_map[gray_masks[j, k]]
+    if len(gray_masks.shape) == 2:
+        color_masks = np.empty((gray_masks.shape[0], gray_masks.shape[1], 3), dtype=np.uint8)
+        for j in range(gray_masks.shape[0]):
+            for k in range(gray_masks.shape[1]):
+                color_masks[j, k] = gray_to_color_map[gray_masks[j, k]]
+    else:
+        color_masks = np.empty((gray_masks.shape[0], gray_masks.shape[1], gray_masks.shape[2], 3), dtype=np.uint8)
+        for i in range(gray_masks.shape[0]):
+            for j in range(gray_masks.shape[1]):
+                for k in range(gray_masks.shape[2]):
+                    color_masks[i, j, k] = gray_to_color_map[gray_masks[i, j, k]]
 
     return color_masks
 
 
-def convert_to_gray_mask(mask_frames):
+def convert_to_gray_mask(mask_frames, color_to_gray_map):
     flag = 0
     if (len(mask_frames.shape) != 4):
         flag = 1
         mask_frames = np.expand_dims(mask_frames, axis=0)
 
-    color_to_gray_map = {}
-    gray_to_color_map = {}
-    current_label = 0
 
     gray_masks = np.empty((mask_frames.shape[0], mask_frames.shape[1], mask_frames.shape[2]), dtype=np.uint8)
     for i in range(mask_frames.shape[0]): # t
         for j in range(mask_frames.shape[1]): # w
             for k in range(mask_frames.shape[2]): # h
                 color = tuple(mask_frames[i, j, k])
-                if color not in color_to_gray_map:
-                    color_to_gray_map[color] = current_label
-                    gray_to_color_map[current_label] = color
-                    current_label += 1
                 gray_masks[i, j, k] = color_to_gray_map[color]
 
     if flag == 1:
         gray_masks = np.squeeze(gray_masks, axis=0)
 
-    return gray_masks, color_to_gray_map, gray_to_color_map
+    return gray_masks
 
 
 def time_parameter(t):
