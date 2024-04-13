@@ -19,7 +19,7 @@ if __name__ == '__main__':
     print(model)
 
     model.eval()
-    input = torch.randn(1, 4, 224, 224)
+    input = torch.randn(2, 4, 224, 224)
     output = model(input)
 
     print(output.shape, output[0, 0, 0, 0], output[0, 1, 0, 0])

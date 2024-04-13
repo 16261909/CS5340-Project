@@ -5,13 +5,14 @@ Resize = (224, 224)
 OriginalSize = (854, 480)
 
 # mrf.py
+total_iter = 1
 ICM_iter = 5
 e_u_true_possibility = 0.7
 log_e_u_true_possibility = np.log(e_u_true_possibility)
 e_u_false_possibility = 1 - e_u_true_possibility
 log_e_u_false_possibility = np.log(e_u_false_possibility)
 theta_u = 1
-theta_t = 1
+theta_t = 0
 theta_s = 1.5
 s_coefficient = 1.2
 flow_range = 2
