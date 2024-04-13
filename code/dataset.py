@@ -20,6 +20,10 @@ class CustomDataset(Dataset):
     def __getitem__(self, idx):
         image = Image.open(self.image_path)
         mask = Image.open(self.mask_path)
+        if mask.mode == "L":
+            print("Mask is single channel")
+        else:
+            print("Mask is not single channel")
 
         if self.image_transform and self.mask_transform:
             seed = np.random.randint(42)
@@ -27,6 +31,9 @@ class CustomDataset(Dataset):
             image_transformed = self.image_transform(image)
             torch.manual_seed(seed)
             mask_transformed = self.mask_transform(mask)
+
+            print(image_transformed.shape, mask_transformed.shape)
+
             return image_transformed, mask_transformed
         else:
             return image, mask

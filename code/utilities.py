@@ -19,9 +19,11 @@ def filter_unreliable_flow(flo):
 
 def restore_color_mask(gray_masks, gray_to_color_map):
     color_masks = np.empty((gray_masks.shape[0], gray_masks.shape[1], 3), dtype=np.uint8)
-    for i in range(gray_masks.shape[0]):
-        for j in range(gray_masks.shape[1]):
-            color_masks[i, j] = gray_to_color_map[gray_masks[i, j]]
+    # gray_masks.shape[0],
+    # for i in range(gray_masks.shape[0]):
+    for j in range(gray_masks.shape[0]):
+        for k in range(gray_masks.shape[1]):
+            color_masks[j, k] = gray_to_color_map[gray_masks[j, k]]
 
     return color_masks
 
