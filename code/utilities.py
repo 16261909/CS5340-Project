@@ -168,29 +168,40 @@ def generate_gif(image_path, ground_truth_path, mask_path, output_path):
     frames[0].save(output_path, save_all=True, append_images=frames[1:], loop=0, duration=100)
 
 
-def generate_result(image_path, ground_truth_path, mask_path, output_path):
-
-
+def generate_result(image_path, ground_truth_path, path, path1, path2, path3, output_path):
 
     frames = []
     image_list = sorted(os.listdir(image_path))
 
     imgs = np.zeros((len(image_list), OutputResize[1], OutputResize[0], 3), dtype=np.uint8)
     gt = np.zeros((len(image_list), OutputResize[1], OutputResize[0], 3), dtype=np.uint8)
-    mask = np.zeros((len(image_list), OutputResize[1], OutputResize[0], 3), dtype=np.uint8)
+    tmp = np.zeros((len(image_list), OutputResize[1], OutputResize[0], 3), dtype=np.uint8)
+    tmp1 = np.zeros((len(image_list), OutputResize[1], OutputResize[0], 3), dtype=np.uint8)
+    tmp2 = np.zeros((len(image_list), OutputResize[1], OutputResize[0], 3), dtype=np.uint8)
+    tmp3 = np.zeros((len(image_list), OutputResize[1], OutputResize[0], 3), dtype=np.uint8)
 
     for i in range(len(image_list)):
-        mask[i] = cv2.resize(cv2.imread(os.path.join(mask_path, f"{i:05d}.png")), OutputResize, interpolation=cv2.INTER_NEAREST)
-        imgs[i] = cv2.resize(cv2.imread(os.path.join(image_path, f"{i:05d}.png")), OutputResize, interpolation=cv2.INTER_NEAREST)
+        imgs[i] = cv2.resize(cv2.imread(os.path.join(image_path, f"{i:05d}.jpg")), OutputResize, interpolation=cv2.INTER_NEAREST)
         gt[i] = cv2.resize(cv2.imread(os.path.join(ground_truth_path, f"{i:05d}.png")), OutputResize, interpolation=cv2.INTER_NEAREST)
-        mask[i] = cv2.cvtColor(mask[i], cv2.COLOR_BGR2RGB)
+        tmp[i] = cv2.resize(cv2.imread(os.path.join(path, f"{i:05d}.png")), OutputResize, interpolation=cv2.INTER_NEAREST)
+        tmp1[i] = cv2.resize(cv2.imread(os.path.join(path1, f"{i:05d}.png")), OutputResize, interpolation=cv2.INTER_NEAREST)
+        tmp2[i] = cv2.resize(cv2.imread(os.path.join(path2, f"{i:05d}.png")), OutputResize, interpolation=cv2.INTER_NEAREST)
+        tmp3[i] = cv2.resize(cv2.imread(os.path.join(path3, f"{i:05d}.png")), OutputResize, interpolation=cv2.INTER_NEAREST)
+
+        tmp1[i] = cv2.cvtColor(tmp1[i], cv2.COLOR_BGR2RGB)
         imgs[i] = cv2.cvtColor(imgs[i], cv2.COLOR_BGR2RGB)
         gt[i] = cv2.cvtColor(gt[i], cv2.COLOR_BGR2RGB)
-
-        combined = Image.new('RGB', (imgs[i].shape[1] * 3, imgs[i].shape[0]))
+        tmp[i] = cv2.cvtColor(tmp[i], cv2.COLOR_BGR2RGB)
+        tmp2[i] = cv2.cvtColor(tmp2[i], cv2.COLOR_BGR2RGB)
+        tmp3[i] = cv2.cvtColor(tmp3[i], cv2.COLOR_BGR2RGB)
+        combined = Image.new('RGB', (imgs[i].shape[1] * 6, imgs[i].shape[0]))
         combined.paste(Image.fromarray(imgs[i]), (0, 0))
         combined.paste(Image.fromarray(gt[i]), (imgs[i].shape[1], 0))
-        combined.paste(Image.fromarray(mask[i]), (imgs[i].shape[1] * 2, 0))
+        combined.paste(Image.fromarray(tmp[i]), (imgs[i].shape[1] * 2, 0))
+        combined.paste(Image.fromarray(tmp1[i]), (imgs[i].shape[1] * 3, 0))
+        combined.paste(Image.fromarray(tmp2[i]), (imgs[i].shape[1] * 4, 0))
+        combined.paste(Image.fromarray(tmp3[i]), (imgs[i].shape[1] * 5, 0))
+
 
         frames.append(combined)
 

@@ -1,7 +1,7 @@
 import torch
 import numpy as np
 
-OutputResize = (448, 224)
+OutputResize = (224, 112)
 Resize = (224, 224)
 OriginalSize = (854, 480)
 
@@ -19,7 +19,7 @@ s_coefficient = 0.98
 flow_range = 2
 not_calculated_err = -20000
 out_of_range_err = -10000
-time_base = 1
+time_base = 0.96
 time_min = 0.4
 
 # train.py
@@ -30,5 +30,3 @@ step_size = 2
 gamma = 0.8
 train_epoch = 40
 batch_size = 8
-
-
