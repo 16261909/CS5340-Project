@@ -19,7 +19,7 @@ s_coefficient = 0.98
 flow_range = 2
 not_calculated_err = -20000
 out_of_range_err = -10000
-time_base = 0.97
+time_base = 1
 time_min = 0.4
 
 # train.py

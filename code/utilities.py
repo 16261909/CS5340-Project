@@ -170,6 +170,8 @@ def generate_gif(image_path, ground_truth_path, mask_path, output_path):
 
 def generate_result(image_path, ground_truth_path, mask_path, output_path):
 
+
+
     frames = []
     image_list = sorted(os.listdir(image_path))
 
