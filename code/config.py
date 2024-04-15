@@ -25,8 +25,8 @@ time_min = 0.4
 # train.py
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 augmentation_num = 512
-learning_rate = 1e-3
-step_size = 2
-gamma = 0.8
-train_epoch = 40
-batch_size = 8
+learning_rate = 5e-4
+step_size = 30
+gamma = 0.9
+train_epoch = 90
+batch_size = 48

@@ -1,0 +1,812 @@
+2024-04-14 11:13:20,798 - INFO - Start of the program
+2024-04-14 11:13:20,799 - INFO - bear
+2024-04-14 11:13:20,836 - INFO - type_cnt: 2
+2024-04-14 11:14:30,890 - INFO - Best Eval Loss: 0.4858 Best Eval Accuracy: 0.9113
+2024-04-14 11:14:30,890 - INFO - bmx-bumps
+2024-04-14 11:14:30,927 - INFO - type_cnt: 3
+2024-04-14 11:15:29,829 - INFO - Best Eval Loss: 0.9463 Best Eval Accuracy: 0.7653
+2024-04-14 11:15:29,829 - INFO - boat
+2024-04-14 11:15:29,872 - INFO - type_cnt: 2
+2024-04-14 11:16:30,026 - INFO - Best Eval Loss: 0.4984 Best Eval Accuracy: 0.9420
+2024-04-14 11:16:30,026 - INFO - boxing-fisheye
+2024-04-14 11:16:30,071 - INFO - type_cnt: 4
+2024-04-14 11:17:32,615 - INFO - Best Eval Loss: 1.2288 Best Eval Accuracy: 0.7225
+2024-04-14 11:17:32,615 - INFO - breakdance-flare
+2024-04-14 11:17:32,659 - INFO - type_cnt: 2
+2024-04-14 11:18:30,420 - INFO - Early stopping initiated at epoch 46
+2024-04-14 11:18:30,421 - INFO - Best Eval Loss: 0.5028 Best Eval Accuracy: 0.9217
+2024-04-14 11:18:30,421 - INFO - bus
+2024-04-14 11:18:30,461 - INFO - type_cnt: 2
+2024-04-14 11:19:27,206 - INFO - Early stopping initiated at epoch 47
+2024-04-14 11:19:27,206 - INFO - Best Eval Loss: 0.4557 Best Eval Accuracy: 0.9420
+2024-04-14 11:19:27,206 - INFO - car-turn
+2024-04-14 11:19:27,249 - INFO - type_cnt: 2
+2024-04-14 11:20:26,755 - INFO - Best Eval Loss: 0.5769 Best Eval Accuracy: 0.9738
+2024-04-14 11:20:26,755 - INFO - cat-girl
+2024-04-14 11:20:26,796 - INFO - type_cnt: 3
+2024-04-14 11:21:27,631 - INFO - Best Eval Loss: 0.8069 Best Eval Accuracy: 0.9043
+2024-04-14 11:21:27,631 - INFO - classic-car
+2024-04-14 11:21:27,673 - INFO - type_cnt: 4
+2024-04-14 11:22:24,058 - INFO - Early stopping initiated at epoch 45
+2024-04-14 11:22:24,058 - INFO - Best Eval Loss: 1.0656 Best Eval Accuracy: 0.8932
+2024-04-14 11:22:24,058 - INFO - color-run
+2024-04-14 11:22:24,099 - INFO - type_cnt: 4
+2024-04-14 11:23:22,745 - INFO - Best Eval Loss: 1.2092 Best Eval Accuracy: 0.7439
+2024-04-14 11:23:22,745 - INFO - Average Best Accuracy: 0.8720
+2024-04-14 11:23:22,747 - INFO - Start of the program
+2024-04-14 11:23:22,747 - INFO - bear
+2024-04-14 11:23:22,790 - INFO - type_cnt: 2
+2024-04-14 11:24:49,382 - INFO - Early stopping initiated at epoch 70
+2024-04-14 11:24:49,383 - INFO - Best Eval Loss: 0.3365 Best Eval Accuracy: 0.9918
+2024-04-14 11:24:49,383 - INFO - bmx-bumps
+2024-04-14 11:24:49,424 - INFO - type_cnt: 3
+2024-04-14 11:26:08,639 - INFO - Early stopping initiated at epoch 67
+2024-04-14 11:26:08,640 - INFO - Best Eval Loss: 0.6138 Best Eval Accuracy: 0.9810
+2024-04-14 11:26:08,640 - INFO - boat
+2024-04-14 11:26:08,682 - INFO - type_cnt: 2
+2024-04-14 11:27:35,115 - INFO - Early stopping initiated at epoch 72
+2024-04-14 11:27:35,116 - INFO - Best Eval Loss: 0.3402 Best Eval Accuracy: 0.9843
+2024-04-14 11:27:35,116 - INFO - boxing-fisheye
+2024-04-14 11:27:35,158 - INFO - type_cnt: 4
+2024-04-14 11:29:10,501 - INFO - Best Eval Loss: 0.8394 Best Eval Accuracy: 0.9491
+2024-04-14 11:29:10,502 - INFO - breakdance-flare
+2024-04-14 11:29:10,538 - INFO - type_cnt: 2
+2024-04-14 11:30:35,147 - INFO - Early stopping initiated at epoch 69
+2024-04-14 11:30:35,147 - INFO - Best Eval Loss: 0.3507 Best Eval Accuracy: 0.9896
+2024-04-14 11:30:35,147 - INFO - bus
+2024-04-14 11:30:35,184 - INFO - type_cnt: 2
+2024-04-14 11:31:58,126 - INFO - Early stopping initiated at epoch 69
+2024-04-14 11:31:58,126 - INFO - Best Eval Loss: 0.3456 Best Eval Accuracy: 0.9825
+2024-04-14 11:31:58,126 - INFO - car-turn
+2024-04-14 11:31:58,162 - INFO - type_cnt: 2
+2024-04-14 11:33:22,279 - INFO - Early stopping initiated at epoch 69
+2024-04-14 11:33:22,280 - INFO - Best Eval Loss: 0.3343 Best Eval Accuracy: 0.9959
+2024-04-14 11:33:22,280 - INFO - cat-girl
+2024-04-14 11:33:22,317 - INFO - type_cnt: 3
+2024-04-14 11:34:57,091 - INFO - Best Eval Loss: 0.6034 Best Eval Accuracy: 0.9584
+2024-04-14 11:34:57,091 - INFO - classic-car
+2024-04-14 11:34:57,129 - INFO - type_cnt: 4
+2024-04-14 11:36:32,594 - INFO - Best Eval Loss: 0.8049 Best Eval Accuracy: 0.9782
+2024-04-14 11:36:32,594 - INFO - color-run
+2024-04-14 11:36:32,630 - INFO - type_cnt: 4
+2024-04-14 11:38:04,019 - INFO - Best Eval Loss: 0.8137 Best Eval Accuracy: 0.9594
+2024-04-14 11:38:04,019 - INFO - Average Best Accuracy: 0.9770
+2024-04-14 11:38:04,021 - INFO - Start of the program
+2024-04-14 11:38:04,021 - INFO - bear
+2024-04-14 11:38:04,057 - INFO - type_cnt: 2
+2024-04-14 11:39:13,834 - INFO - Early stopping initiated at epoch 57
+2024-04-14 11:39:13,834 - INFO - Best Eval Loss: 0.4822 Best Eval Accuracy: 0.9194
+2024-04-14 11:39:13,834 - INFO - bmx-bumps
+2024-04-14 11:39:13,870 - INFO - type_cnt: 3
+2024-04-14 11:39:51,850 - INFO - Early stopping initiated at epoch 32
+2024-04-14 11:39:51,850 - INFO - Best Eval Loss: 0.8167 Best Eval Accuracy: 0.8909
+2024-04-14 11:39:51,851 - INFO - boat
+2024-04-14 11:39:51,888 - INFO - type_cnt: 2
+2024-04-14 11:40:44,446 - INFO - Early stopping initiated at epoch 44
+2024-04-14 11:40:44,446 - INFO - Best Eval Loss: 0.5181 Best Eval Accuracy: 0.9019
+2024-04-14 11:40:44,446 - INFO - boxing-fisheye
+2024-04-14 11:40:44,482 - INFO - type_cnt: 4
+2024-04-14 11:41:43,599 - INFO - Early stopping initiated at epoch 49
+2024-04-14 11:41:43,600 - INFO - Best Eval Loss: 1.1123 Best Eval Accuracy: 0.8252
+2024-04-14 11:41:43,600 - INFO - breakdance-flare
+2024-04-14 11:41:43,636 - INFO - type_cnt: 2
+2024-04-14 11:42:37,246 - INFO - Early stopping initiated at epoch 44
+2024-04-14 11:42:37,246 - INFO - Best Eval Loss: 0.4639 Best Eval Accuracy: 0.9639
+2024-04-14 11:42:37,246 - INFO - bus
+2024-04-14 11:42:37,283 - INFO - type_cnt: 2
+2024-04-14 11:43:24,116 - INFO - Early stopping initiated at epoch 39
+2024-04-14 11:43:24,117 - INFO - Best Eval Loss: 0.4184 Best Eval Accuracy: 0.9453
+2024-04-14 11:43:24,117 - INFO - car-turn
+2024-04-14 11:43:24,153 - INFO - type_cnt: 2
+2024-04-14 11:44:19,574 - INFO - Early stopping initiated at epoch 46
+2024-04-14 11:44:19,574 - INFO - Best Eval Loss: 0.4954 Best Eval Accuracy: 0.9720
+2024-04-14 11:44:19,574 - INFO - cat-girl
+2024-04-14 11:44:19,611 - INFO - type_cnt: 3
+2024-04-14 11:45:21,938 - INFO - Early stopping initiated at epoch 51
+2024-04-14 11:45:21,938 - INFO - Best Eval Loss: 0.7577 Best Eval Accuracy: 0.9212
+2024-04-14 11:45:21,938 - INFO - classic-car
+2024-04-14 11:45:21,975 - INFO - type_cnt: 4
+2024-04-14 11:46:36,715 - INFO - Early stopping initiated at epoch 61
+2024-04-14 11:46:36,715 - INFO - Best Eval Loss: 1.0187 Best Eval Accuracy: 0.9046
+2024-04-14 11:46:36,715 - INFO - color-run
+2024-04-14 11:46:36,751 - INFO - type_cnt: 4
+2024-04-14 11:47:19,509 - INFO - Early stopping initiated at epoch 36
+2024-04-14 11:47:19,509 - INFO - Best Eval Loss: 1.0980 Best Eval Accuracy: 0.8169
+2024-04-14 11:47:19,509 - INFO - Average Best Accuracy: 0.9061
+2024-04-14 11:47:19,511 - INFO - Start of the program
+2024-04-14 11:47:19,511 - INFO - bear
+2024-04-14 11:47:19,547 - INFO - type_cnt: 2
+2024-04-14 11:47:55,756 - INFO - Early stopping initiated at epoch 29
+2024-04-14 11:47:55,756 - INFO - Best Eval Loss: 0.5105 Best Eval Accuracy: 0.9045
+2024-04-14 11:47:55,756 - INFO - bmx-bumps
+2024-04-14 11:47:55,792 - INFO - type_cnt: 3
+2024-04-14 11:48:08,640 - INFO - Early stopping initiated at epoch 10
+2024-04-14 11:48:08,640 - INFO - Best Eval Loss: 1.1374 Best Eval Accuracy: 0.0123
+2024-04-14 11:48:08,640 - INFO - boat
+2024-04-14 11:48:08,676 - INFO - type_cnt: 2
+2024-04-14 11:48:42,616 - INFO - Early stopping initiated at epoch 28
+2024-04-14 11:48:42,616 - INFO - Best Eval Loss: 0.4822 Best Eval Accuracy: 0.9580
+2024-04-14 11:48:42,616 - INFO - boxing-fisheye
+2024-04-14 11:48:42,653 - INFO - type_cnt: 4
+2024-04-14 11:49:21,797 - INFO - Early stopping initiated at epoch 32
+2024-04-14 11:49:21,797 - INFO - Best Eval Loss: 1.2608 Best Eval Accuracy: 0.7386
+2024-04-14 11:49:21,797 - INFO - breakdance-flare
+2024-04-14 11:49:21,834 - INFO - type_cnt: 2
+2024-04-14 11:49:54,171 - INFO - Early stopping initiated at epoch 26
+2024-04-14 11:49:54,171 - INFO - Best Eval Loss: 0.5437 Best Eval Accuracy: 0.9352
+2024-04-14 11:49:54,171 - INFO - bus
+2024-04-14 11:49:54,206 - INFO - type_cnt: 2
+2024-04-14 11:50:30,527 - INFO - Early stopping initiated at epoch 30
+2024-04-14 11:50:30,527 - INFO - Best Eval Loss: 0.5095 Best Eval Accuracy: 0.9093
+2024-04-14 11:50:30,527 - INFO - car-turn
+2024-04-14 11:50:30,563 - INFO - type_cnt: 2
+2024-04-14 11:51:03,700 - INFO - Early stopping initiated at epoch 27
+2024-04-14 11:51:03,700 - INFO - Best Eval Loss: 0.6157 Best Eval Accuracy: 0.8933
+2024-04-14 11:51:03,700 - INFO - cat-girl
+2024-04-14 11:51:03,737 - INFO - type_cnt: 3
+2024-04-14 11:51:35,017 - INFO - Early stopping initiated at epoch 25
+2024-04-14 11:51:35,017 - INFO - Best Eval Loss: 0.9215 Best Eval Accuracy: 0.8281
+2024-04-14 11:51:35,017 - INFO - classic-car
+2024-04-14 11:51:35,054 - INFO - type_cnt: 4
+2024-04-14 11:52:07,736 - INFO - Early stopping initiated at epoch 26
+2024-04-14 11:52:07,736 - INFO - Best Eval Loss: 1.2677 Best Eval Accuracy: 0.6816
+2024-04-14 11:52:07,736 - INFO - color-run
+2024-04-14 11:52:07,772 - INFO - type_cnt: 4
+2024-04-14 11:52:37,888 - INFO - Early stopping initiated at epoch 25
+2024-04-14 11:52:37,889 - INFO - Best Eval Loss: 1.3096 Best Eval Accuracy: 0.5417
+2024-04-14 11:52:37,889 - INFO - Average Best Accuracy: 0.7403
+2024-04-14 11:52:37,890 - INFO - Start of the program
+2024-04-14 11:52:37,890 - INFO - bear
+2024-04-14 11:52:37,927 - INFO - type_cnt: 2
+2024-04-14 11:53:37,800 - INFO - Best Eval Loss: 0.4349 Best Eval Accuracy: 0.9498
+2024-04-14 11:53:37,801 - INFO - bmx-bumps
+2024-04-14 11:53:37,837 - INFO - type_cnt: 3
+2024-04-14 11:54:35,073 - INFO - Best Eval Loss: 0.8052 Best Eval Accuracy: 0.8902
+2024-04-14 11:54:35,073 - INFO - boat
+2024-04-14 11:54:35,110 - INFO - type_cnt: 2
+2024-04-14 11:55:33,211 - INFO - Best Eval Loss: 0.4406 Best Eval Accuracy: 0.9528
+2024-04-14 11:55:33,211 - INFO - boxing-fisheye
+2024-04-14 11:55:33,247 - INFO - type_cnt: 4
+2024-04-14 11:56:30,911 - INFO - Early stopping initiated at epoch 47
+2024-04-14 11:56:30,911 - INFO - Best Eval Loss: 1.0372 Best Eval Accuracy: 0.8743
+2024-04-14 11:56:30,911 - INFO - breakdance-flare
+2024-04-14 11:56:30,948 - INFO - type_cnt: 2
+2024-04-14 11:57:30,275 - INFO - Best Eval Loss: 0.4311 Best Eval Accuracy: 0.9601
+2024-04-14 11:57:30,275 - INFO - bus
+2024-04-14 11:57:30,310 - INFO - type_cnt: 2
+2024-04-14 11:58:28,468 - INFO - Best Eval Loss: 0.3900 Best Eval Accuracy: 0.9654
+2024-04-14 11:58:28,468 - INFO - car-turn
+2024-04-14 11:58:28,506 - INFO - type_cnt: 2
+2024-04-14 11:59:27,220 - INFO - Best Eval Loss: 0.4370 Best Eval Accuracy: 0.9814
+2024-04-14 11:59:27,220 - INFO - cat-girl
+2024-04-14 11:59:27,256 - INFO - type_cnt: 3
+2024-04-14 12:00:26,848 - INFO - Best Eval Loss: 0.6968 Best Eval Accuracy: 0.9290
+2024-04-14 12:00:26,848 - INFO - classic-car
+2024-04-14 12:00:26,884 - INFO - type_cnt: 4
+2024-04-14 12:01:26,982 - INFO - Best Eval Loss: 0.9799 Best Eval Accuracy: 0.8919
+2024-04-14 12:01:26,982 - INFO - color-run
+2024-04-14 12:01:27,018 - INFO - type_cnt: 4
+2024-04-14 12:02:24,491 - INFO - Best Eval Loss: 0.9858 Best Eval Accuracy: 0.8767
+2024-04-14 12:02:24,491 - INFO - Average Best Accuracy: 0.9271
+2024-04-14 12:02:24,493 - INFO - Optimization finished. Best trial:
+2024-04-14 12:02:24,493 - INFO - Value (Best Loss): 0.9770288584183673
+2024-04-14 12:02:24,493 - INFO - lr: 6.918140262678547e-05
+2024-04-14 12:02:24,493 - INFO - batch_size: 32
+2024-04-14 12:02:24,493 - INFO - step_size: 28
+2024-04-14 12:02:24,493 - INFO - gamma: 0.8621717908787605
+2024-04-14 12:02:24,493 - INFO - train_epoch: 78
+2024-04-14 15:57:10,259 - INFO - Start of the program
+2024-04-14 15:57:10,259 - INFO - boxing-fisheye
+2024-04-14 15:57:19,811 - INFO - Start of the program
+2024-04-14 15:57:19,811 - INFO - boxing-fisheye
+2024-04-14 15:59:39,123 - INFO - Start of the program
+2024-04-14 15:59:39,123 - INFO - boxing-fisheye
+2024-04-14 15:59:39,417 - INFO - type_cnt: 4
+2024-04-14 16:02:43,140 - INFO - Early stopping initiated at epoch 40
+2024-04-14 16:02:43,140 - INFO - Best Eval Loss: 0.8355 Best Eval Accuracy: 0.9449
+2024-04-14 16:02:43,141 - INFO - Average Best Accuracy: 0.9449
+2024-04-14 16:02:43,142 - INFO - Optimization finished. Best trial:
+2024-04-14 16:02:43,142 - INFO - Value (Best Loss): 0.9448939732142857
+2024-04-14 16:02:43,142 - INFO - lr: 0.0001294554886034478
+2024-04-14 16:02:43,142 - INFO - batch_size: 48
+2024-04-14 16:02:43,142 - INFO - step_size: 30
+2024-04-14 16:02:43,142 - INFO - gamma: 0.6494123562799168
+2024-04-14 16:02:43,142 - INFO - train_epoch: 114
+2024-04-14 16:07:43,311 - INFO - Start of the program
+2024-04-14 16:07:43,312 - INFO - boxing-fisheye
+2024-04-14 16:07:43,602 - INFO - type_cnt: 4
+2024-04-14 16:13:31,969 - INFO - Start of the program
+2024-04-14 16:13:31,970 - INFO - boxing-fisheye
+2024-04-14 16:13:32,244 - INFO - type_cnt: 4
+2024-04-14 16:16:24,955 - INFO - Early stopping initiated at epoch 38
+2024-04-14 16:16:24,955 - INFO - Best Eval Loss: 0.7550 Best Eval Accuracy: 0.9924
+2024-04-14 16:16:24,955 - INFO - Average Best Accuracy: 0.9924
+2024-04-14 16:16:24,957 - INFO - Start of the program
+2024-04-14 16:16:24,957 - INFO - boxing-fisheye
+2024-04-14 16:16:25,225 - INFO - type_cnt: 4
+2024-04-14 16:18:58,280 - INFO - Early stopping initiated at epoch 34
+2024-04-14 16:18:58,280 - INFO - Best Eval Loss: 0.7610 Best Eval Accuracy: 0.9900
+2024-04-14 16:18:58,280 - INFO - Average Best Accuracy: 0.9900
+2024-04-14 16:18:58,282 - INFO - Start of the program
+2024-04-14 16:18:58,282 - INFO - boxing-fisheye
+2024-04-14 16:18:58,549 - INFO - type_cnt: 4
+2024-04-14 16:21:01,224 - INFO - Early stopping initiated at epoch 27
+2024-04-14 16:21:01,224 - INFO - Best Eval Loss: 0.8139 Best Eval Accuracy: 0.9594
+2024-04-14 16:21:01,224 - INFO - Average Best Accuracy: 0.9594
+2024-04-14 16:21:01,226 - INFO - Start of the program
+2024-04-14 16:21:01,226 - INFO - boxing-fisheye
+2024-04-14 16:21:01,496 - INFO - type_cnt: 4
+2024-04-14 16:24:40,530 - INFO - Early stopping initiated at epoch 49
+2024-04-14 16:24:40,531 - INFO - Best Eval Loss: 0.7910 Best Eval Accuracy: 0.9854
+2024-04-14 16:24:40,531 - INFO - Average Best Accuracy: 0.9854
+2024-04-14 16:24:40,532 - INFO - Start of the program
+2024-04-14 16:24:40,533 - INFO - boxing-fisheye
+2024-04-14 16:24:40,799 - INFO - type_cnt: 4
+2024-04-14 16:27:39,444 - INFO - Early stopping initiated at epoch 40
+2024-04-14 16:27:39,445 - INFO - Best Eval Loss: 0.8313 Best Eval Accuracy: 0.9495
+2024-04-14 16:27:39,445 - INFO - Average Best Accuracy: 0.9495
+2024-04-14 16:27:39,447 - INFO - Start of the program
+2024-04-14 16:27:39,447 - INFO - boxing-fisheye
+2024-04-14 16:27:39,715 - INFO - type_cnt: 4
+2024-04-14 16:30:51,282 - INFO - Early stopping initiated at epoch 43
+2024-04-14 16:30:51,282 - INFO - Best Eval Loss: 0.7858 Best Eval Accuracy: 0.9838
+2024-04-14 16:30:51,282 - INFO - Average Best Accuracy: 0.9838
+2024-04-14 16:30:51,284 - INFO - Start of the program
+2024-04-14 16:30:51,284 - INFO - boxing-fisheye
+2024-04-14 16:30:51,551 - INFO - type_cnt: 4
+2024-04-14 16:33:19,771 - INFO - Early stopping initiated at epoch 33
+2024-04-14 16:33:19,771 - INFO - Best Eval Loss: 0.7711 Best Eval Accuracy: 0.9887
+2024-04-14 16:33:19,771 - INFO - Average Best Accuracy: 0.9887
+2024-04-14 16:33:19,773 - INFO - Start of the program
+2024-04-14 16:33:19,773 - INFO - boxing-fisheye
+2024-04-14 16:33:20,040 - INFO - type_cnt: 4
+2024-04-14 16:35:26,423 - INFO - Early stopping initiated at epoch 28
+2024-04-14 16:35:26,423 - INFO - Best Eval Loss: 0.9353 Best Eval Accuracy: 0.9054
+2024-04-14 16:35:26,423 - INFO - Average Best Accuracy: 0.9054
+2024-04-14 16:35:26,425 - INFO - Start of the program
+2024-04-14 16:35:26,425 - INFO - boxing-fisheye
+2024-04-14 16:35:26,696 - INFO - type_cnt: 4
+2024-04-14 16:38:38,264 - INFO - Early stopping initiated at epoch 43
+2024-04-14 16:38:38,264 - INFO - Best Eval Loss: 0.7699 Best Eval Accuracy: 0.9888
+2024-04-14 16:38:38,264 - INFO - Average Best Accuracy: 0.9888
+2024-04-14 16:38:38,266 - INFO - Start of the program
+2024-04-14 16:38:38,266 - INFO - boxing-fisheye
+2024-04-14 16:38:38,534 - INFO - type_cnt: 4
+2024-04-14 16:41:24,858 - INFO - Early stopping initiated at epoch 37
+2024-04-14 16:41:24,859 - INFO - Best Eval Loss: 0.8510 Best Eval Accuracy: 0.9426
+2024-04-14 16:41:24,859 - INFO - Average Best Accuracy: 0.9426
+2024-04-14 16:41:24,860 - INFO - Optimization finished. Best trial:
+2024-04-14 16:41:24,860 - INFO - Value (Best Loss): 0.9924465880102041
+2024-04-14 16:41:24,860 - INFO - lr: 0.00041805732374119124
+2024-04-14 16:41:24,860 - INFO - batch_size: 48
+2024-04-14 16:41:24,860 - INFO - step_size: 29
+2024-04-14 16:41:24,860 - INFO - gamma: 0.8941633669059763
+2024-04-14 16:41:24,860 - INFO - train_epoch: 88
+2024-04-14 20:20:32,547 - INFO - Start of the program
+2024-04-14 20:20:32,547 - INFO - bear
+2024-04-14 20:20:32,832 - INFO - type_cnt: 2
+2024-04-14 20:23:08,603 - INFO - Start of the program
+2024-04-14 20:23:08,603 - INFO - bear
+2024-04-14 20:23:08,879 - INFO - type_cnt: 2
+2024-04-14 22:25:28,237 - INFO - Start of the program
+2024-04-14 22:25:28,238 - INFO - bear
+2024-04-14 22:25:28,517 - INFO - type_cnt: 2
+2024-04-14 22:28:07,876 - INFO - Early stopping initiated at epoch 32
+2024-04-14 22:28:07,943 - INFO - Best Eval Loss: 0.3185 Best Eval Accuracy: 0.9956
+2024-04-14 22:28:08,010 - INFO - Average Best Accuracy: 0.9956
+2024-04-14 22:29:21,769 - INFO - Start of the program
+2024-04-14 22:31:35,093 - INFO - bear
+2024-04-14 22:31:35,401 - INFO - type_cnt: 2
+2024-04-14 22:34:19,413 - INFO - Start of the program
+2024-04-14 22:34:19,413 - INFO - bear
+2024-04-14 22:34:19,688 - INFO - type_cnt: 2
+2024-04-14 22:36:24,281 - INFO - Early stopping initiated at epoch 23
+2024-04-14 22:36:24,354 - INFO - Best Eval Loss: 0.3193 Best Eval Accuracy: 0.9953
+2024-04-14 22:36:24,418 - INFO - Average Best Accuracy: 0.9953
+2024-04-14 22:39:03,282 - INFO - Start of the program
+2024-04-14 22:39:03,282 - INFO - bear
+2024-04-14 22:39:03,563 - INFO - type_cnt: 2
+2024-04-14 22:41:02,477 - INFO - Early stopping initiated at epoch 25
+2024-04-14 22:41:02,548 - INFO - Best Eval Loss: 0.3186 Best Eval Accuracy: 0.9957
+2024-04-14 22:41:02,614 - INFO - Average Best Accuracy: 0.9957
+2024-04-14 22:49:06,503 - INFO - Start of the program
+2024-04-14 22:49:06,503 - INFO - bear
+2024-04-14 22:49:06,780 - INFO - type_cnt: 2
+2024-04-14 22:51:09,888 - INFO - Early stopping initiated at epoch 26
+2024-04-14 22:51:09,962 - INFO - Best Eval Loss: 0.3184 Best Eval Accuracy: 0.9958
+2024-04-14 22:51:10,029 - INFO - bmx-bumps
+2024-04-14 22:51:10,306 - INFO - type_cnt: 3
+2024-04-14 22:53:41,460 - INFO - Early stopping initiated at epoch 34
+2024-04-14 22:53:41,528 - INFO - Best Eval Loss: 0.5655 Best Eval Accuracy: 0.9886
+2024-04-14 22:53:41,594 - INFO - boat
+2024-04-14 22:53:41,868 - INFO - type_cnt: 2
+2024-04-14 22:55:31,137 - INFO - Early stopping initiated at epoch 24
+2024-04-14 22:55:31,202 - INFO - Best Eval Loss: 0.3246 Best Eval Accuracy: 0.9899
+2024-04-14 22:55:31,266 - INFO - boxing-fisheye
+2024-04-14 22:55:31,542 - INFO - type_cnt: 4
+2024-04-15 00:23:38,644 - INFO - Start of the program
+2024-04-15 00:23:38,644 - INFO - bear
+2024-04-15 00:23:38,927 - INFO - type_cnt: 2
+2024-04-15 00:25:39,084 - INFO - Early stopping initiated at epoch 25
+2024-04-15 00:25:39,149 - INFO - Best Eval Loss: 0.3193 Best Eval Accuracy: 0.9957
+2024-04-15 00:25:39,215 - INFO - bmx-bumps
+2024-04-15 00:25:39,492 - INFO - type_cnt: 3
+2024-04-15 00:27:58,046 - INFO - Early stopping initiated at epoch 31
+2024-04-15 00:27:58,114 - INFO - Best Eval Loss: 0.5651 Best Eval Accuracy: 0.9886
+2024-04-15 00:27:58,182 - INFO - boat
+2024-04-15 00:27:58,463 - INFO - type_cnt: 2
+2024-04-15 00:30:01,566 - INFO - Early stopping initiated at epoch 27
+2024-04-15 00:30:01,633 - INFO - Best Eval Loss: 0.3245 Best Eval Accuracy: 0.9903
+2024-04-15 00:30:01,699 - INFO - boxing-fisheye
+2024-04-15 00:30:01,979 - INFO - type_cnt: 4
+2024-04-15 00:33:00,177 - INFO - Early stopping initiated at epoch 39
+2024-04-15 00:33:00,243 - INFO - Best Eval Loss: 0.7533 Best Eval Accuracy: 0.9934
+2024-04-15 00:33:00,309 - INFO - breakdance-flare
+2024-04-15 00:33:00,587 - INFO - type_cnt: 2
+2024-04-15 00:35:11,566 - INFO - Early stopping initiated at epoch 28
+2024-04-15 00:35:11,635 - INFO - Best Eval Loss: 0.3194 Best Eval Accuracy: 0.9960
+2024-04-15 00:35:11,704 - INFO - bus
+2024-04-15 00:35:11,984 - INFO - type_cnt: 2
+2024-04-15 00:37:25,326 - INFO - Early stopping initiated at epoch 29
+2024-04-15 00:37:25,393 - INFO - Best Eval Loss: 0.3170 Best Eval Accuracy: 0.9975
+2024-04-15 00:37:25,457 - INFO - car-turn
+2024-04-15 00:37:25,738 - INFO - type_cnt: 2
+2024-04-15 00:39:25,929 - INFO - Early stopping initiated at epoch 26
+2024-04-15 00:39:25,999 - INFO - Best Eval Loss: 0.3175 Best Eval Accuracy: 0.9981
+2024-04-15 00:39:26,064 - INFO - cat-girl
+2024-04-15 00:39:26,368 - INFO - type_cnt: 3
+2024-04-15 00:41:41,675 - INFO - Early stopping initiated at epoch 29
+2024-04-15 00:41:41,743 - INFO - Best Eval Loss: 0.5620 Best Eval Accuracy: 0.9913
+2024-04-15 00:41:41,900 - INFO - classic-car
+2024-04-15 00:41:42,183 - INFO - type_cnt: 4
+2024-04-15 00:45:16,571 - INFO - Early stopping initiated at epoch 46
+2024-04-15 00:45:16,638 - INFO - Best Eval Loss: 0.7516 Best Eval Accuracy: 0.9941
+2024-04-15 00:45:16,705 - INFO - color-run
+2024-04-15 00:45:16,986 - INFO - type_cnt: 4
+2024-04-15 00:48:19,730 - INFO - Early stopping initiated at epoch 41
+2024-04-15 00:48:19,796 - INFO - Best Eval Loss: 0.7580 Best Eval Accuracy: 0.9882
+2024-04-15 00:48:19,863 - INFO - crossing
+2024-04-15 00:48:20,145 - INFO - type_cnt: 4
+2024-04-15 00:51:14,205 - INFO - Early stopping initiated at epoch 37
+2024-04-15 00:51:14,274 - INFO - Best Eval Loss: 0.7513 Best Eval Accuracy: 0.9948
+2024-04-15 00:51:14,342 - INFO - dance-jump
+2024-04-15 00:51:14,620 - INFO - type_cnt: 2
+2024-04-15 00:53:40,617 - INFO - Early stopping initiated at epoch 32
+2024-04-15 00:53:40,684 - INFO - Best Eval Loss: 0.3179 Best Eval Accuracy: 0.9967
+2024-04-15 00:53:40,749 - INFO - dancing
+2024-04-15 00:53:41,026 - INFO - type_cnt: 4
+2024-04-15 00:57:04,238 - INFO - Early stopping initiated at epoch 44
+2024-04-15 00:57:04,305 - INFO - Best Eval Loss: 0.7538 Best Eval Accuracy: 0.9930
+2024-04-15 00:57:04,371 - INFO - disc-jockey
+2024-04-15 00:57:04,735 - INFO - type_cnt: 4
+2024-04-15 01:00:07,238 - INFO - Early stopping initiated at epoch 40
+2024-04-15 01:00:07,306 - INFO - Best Eval Loss: 0.7512 Best Eval Accuracy: 0.9943
+2024-04-15 01:00:07,372 - INFO - dog-agility
+2024-04-15 01:00:07,651 - INFO - type_cnt: 2
+2024-04-15 01:02:37,911 - INFO - Early stopping initiated at epoch 33
+2024-04-15 01:02:37,978 - INFO - Best Eval Loss: 0.3189 Best Eval Accuracy: 0.9959
+2024-04-15 01:02:38,044 - INFO - dog-gooses
+2024-04-15 01:02:38,324 - INFO - type_cnt: 6
+2024-04-15 01:05:19,368 - INFO - Early stopping initiated at epoch 34
+2024-04-15 01:05:19,434 - INFO - Best Eval Loss: 1.0521 Best Eval Accuracy: 0.9939
+2024-04-15 01:05:19,500 - INFO - dogs-scale
+2024-04-15 01:05:19,782 - INFO - type_cnt: 5
+2024-04-15 01:09:17,510 - INFO - Early stopping initiated at epoch 53
+2024-04-15 01:09:17,575 - INFO - Best Eval Loss: 0.9171 Best Eval Accuracy: 0.9906
+2024-04-15 01:09:17,641 - INFO - drift-turn
+2024-04-15 01:09:17,926 - INFO - type_cnt: 2
+2024-04-15 01:11:23,920 - INFO - Early stopping initiated at epoch 28
+2024-04-15 01:11:23,986 - INFO - Best Eval Loss: 0.3166 Best Eval Accuracy: 0.9988
+2024-04-15 01:11:24,050 - INFO - drone
+2024-04-15 01:11:24,328 - INFO - type_cnt: 6
+2024-04-15 01:14:41,884 - INFO - Early stopping initiated at epoch 43
+2024-04-15 01:14:41,951 - INFO - Best Eval Loss: 1.0614 Best Eval Accuracy: 0.9851
+2024-04-15 01:14:42,016 - INFO - elephant
+2024-04-15 01:14:42,296 - INFO - type_cnt: 2
+2024-04-15 01:16:48,111 - INFO - Early stopping initiated at epoch 27
+2024-04-15 01:16:48,179 - INFO - Best Eval Loss: 0.3195 Best Eval Accuracy: 0.9954
+2024-04-15 01:16:48,243 - INFO - flamingo
+2024-04-15 01:16:48,524 - INFO - type_cnt: 2
+2024-04-15 01:18:53,333 - INFO - Early stopping initiated at epoch 27
+2024-04-15 01:18:53,402 - INFO - Best Eval Loss: 0.3207 Best Eval Accuracy: 0.9946
+2024-04-15 01:18:53,467 - INFO - hike
+2024-04-15 01:18:53,742 - INFO - type_cnt: 2
+2024-04-15 01:21:06,101 - INFO - Early stopping initiated at epoch 28
+2024-04-15 01:21:06,168 - INFO - Best Eval Loss: 0.3186 Best Eval Accuracy: 0.9972
+2024-04-15 01:21:06,234 - INFO - hockey
+2024-04-15 01:21:06,514 - INFO - type_cnt: 4
+2024-04-15 01:23:39,895 - INFO - Early stopping initiated at epoch 34
+2024-04-15 01:23:39,961 - INFO - Best Eval Loss: 0.7523 Best Eval Accuracy: 0.9939
+2024-04-15 01:23:40,025 - INFO - horsejump-low
+2024-04-15 01:23:40,302 - INFO - type_cnt: 3
+2024-04-15 01:26:17,796 - INFO - Early stopping initiated at epoch 34
+2024-04-15 01:26:17,864 - INFO - Best Eval Loss: 0.5612 Best Eval Accuracy: 0.9925
+2024-04-15 01:26:17,930 - INFO - kid-football
+2024-04-15 01:26:18,216 - INFO - type_cnt: 3
+2024-04-15 01:29:04,981 - INFO - Early stopping initiated at epoch 37
+2024-04-15 01:29:05,048 - INFO - Best Eval Loss: 0.5569 Best Eval Accuracy: 0.9960
+2024-04-15 01:29:05,113 - INFO - kite-walk
+2024-04-15 01:29:05,395 - INFO - type_cnt: 4
+2024-04-15 01:31:25,668 - INFO - Early stopping initiated at epoch 31
+2024-04-15 01:31:25,735 - INFO - Best Eval Loss: 0.7586 Best Eval Accuracy: 0.9884
+2024-04-15 01:31:25,801 - INFO - koala
+2024-04-15 01:31:26,078 - INFO - type_cnt: 2
+2024-04-15 01:33:38,701 - INFO - Early stopping initiated at epoch 29
+2024-04-15 01:33:38,766 - INFO - Best Eval Loss: 0.3209 Best Eval Accuracy: 0.9928
+2024-04-15 01:33:38,839 - INFO - lady-running
+2024-04-15 01:33:39,119 - INFO - type_cnt: 3
+2024-04-15 01:36:39,354 - INFO - Early stopping initiated at epoch 40
+2024-04-15 01:36:39,420 - INFO - Best Eval Loss: 0.5560 Best Eval Accuracy: 0.9971
+2024-04-15 01:36:39,485 - INFO - lindy-hop
+2024-04-15 01:36:39,761 - INFO - type_cnt: 9
+2024-04-15 01:40:50,604 - INFO - Early stopping initiated at epoch 55
+2024-04-15 01:40:50,670 - INFO - Best Eval Loss: 1.4005 Best Eval Accuracy: 0.9779
+2024-04-15 01:40:50,735 - INFO - longboard
+2024-04-15 01:40:51,020 - INFO - type_cnt: 6
+2024-04-15 01:44:58,490 - INFO - Early stopping initiated at epoch 54
+2024-04-15 01:44:58,556 - INFO - Best Eval Loss: 1.0546 Best Eval Accuracy: 0.9920
+2024-04-15 01:44:58,620 - INFO - lucia
+2024-04-15 01:44:58,897 - INFO - type_cnt: 2
+2024-04-15 01:47:14,387 - INFO - Early stopping initiated at epoch 29
+2024-04-15 01:47:14,453 - INFO - Best Eval Loss: 0.3194 Best Eval Accuracy: 0.9960
+2024-04-15 01:47:14,515 - INFO - mallard-fly
+2024-04-15 01:47:14,794 - INFO - type_cnt: 2
+2024-04-15 01:49:31,079 - INFO - Early stopping initiated at epoch 29
+2024-04-15 01:49:31,146 - INFO - Best Eval Loss: 0.3170 Best Eval Accuracy: 0.9983
+2024-04-15 01:49:31,212 - INFO - mallard-water
+2024-04-15 01:49:31,490 - INFO - type_cnt: 2
+2024-04-15 01:52:04,840 - INFO - Early stopping initiated at epoch 34
+2024-04-15 01:52:04,968 - INFO - Best Eval Loss: 0.3169 Best Eval Accuracy: 0.9979
+2024-04-15 01:52:05,033 - INFO - miami-surf
+2024-04-15 01:52:05,310 - INFO - type_cnt: 7
+2024-04-15 01:55:45,340 - INFO - Early stopping initiated at epoch 50
+2024-04-15 01:55:45,406 - INFO - Best Eval Loss: 1.1708 Best Eval Accuracy: 0.9963
+2024-04-15 01:55:45,471 - INFO - motocross-bumps
+2024-04-15 01:55:45,749 - INFO - type_cnt: 3
+2024-04-15 01:58:11,110 - INFO - Early stopping initiated at epoch 32
+2024-04-15 01:58:11,177 - INFO - Best Eval Loss: 0.5559 Best Eval Accuracy: 0.9981
+2024-04-15 01:58:11,242 - INFO - motorbike
+2024-04-15 01:58:11,520 - INFO - type_cnt: 4
+2024-04-15 02:01:24,549 - INFO - Early stopping initiated at epoch 43
+2024-04-15 02:01:24,624 - INFO - Best Eval Loss: 0.7486 Best Eval Accuracy: 0.9968
+2024-04-15 02:01:24,690 - INFO - night-race
+2024-04-15 02:01:24,967 - INFO - type_cnt: 3
+2024-04-15 02:03:52,298 - INFO - Early stopping initiated at epoch 33
+2024-04-15 02:03:52,363 - INFO - Best Eval Loss: 0.5549 Best Eval Accuracy: 0.9986
+2024-04-15 02:03:52,428 - INFO - paragliding
+2024-04-15 02:03:52,713 - INFO - type_cnt: 3
+2024-04-15 02:05:59,300 - INFO - Early stopping initiated at epoch 28
+2024-04-15 02:05:59,366 - INFO - Best Eval Loss: 0.5571 Best Eval Accuracy: 0.9972
+2024-04-15 02:05:59,431 - INFO - planes-water
+2024-04-15 02:05:59,708 - INFO - type_cnt: 3
+2024-04-15 02:09:00,736 - INFO - Early stopping initiated at epoch 41
+2024-04-15 02:09:00,802 - INFO - Best Eval Loss: 0.5656 Best Eval Accuracy: 0.9876
+2024-04-15 02:09:00,868 - INFO - rallye
+2024-04-15 02:09:01,145 - INFO - type_cnt: 2
+2024-04-15 02:11:15,010 - INFO - Early stopping initiated at epoch 28
+2024-04-15 02:11:15,075 - INFO - Best Eval Loss: 0.3160 Best Eval Accuracy: 0.9996
+2024-04-15 02:11:15,140 - INFO - rhino
+2024-04-15 02:11:15,417 - INFO - type_cnt: 2
+2024-04-15 02:13:12,456 - INFO - Early stopping initiated at epoch 25
+2024-04-15 02:13:12,522 - INFO - Best Eval Loss: 0.3199 Best Eval Accuracy: 0.9954
+2024-04-15 02:13:12,587 - INFO - rollerblade
+2024-04-15 02:13:12,863 - INFO - type_cnt: 2
+2024-04-15 02:15:47,698 - INFO - Early stopping initiated at epoch 34
+2024-04-15 02:15:47,765 - INFO - Best Eval Loss: 0.3174 Best Eval Accuracy: 0.9981
+2024-04-15 02:15:47,829 - INFO - schoolgirls
+2024-04-15 02:15:48,107 - INFO - type_cnt: 8
+2024-04-15 02:18:56,962 - INFO - Early stopping initiated at epoch 39
+2024-04-15 02:18:57,027 - INFO - Best Eval Loss: 1.2936 Best Eval Accuracy: 0.9843
+2024-04-15 02:18:57,091 - INFO - scooter-board
+2024-04-15 02:18:57,368 - INFO - type_cnt: 3
+2024-04-15 02:21:23,422 - INFO - Early stopping initiated at epoch 32
+2024-04-15 02:21:23,489 - INFO - Best Eval Loss: 0.5585 Best Eval Accuracy: 0.9950
+2024-04-15 02:21:23,556 - INFO - scooter-gray
+2024-04-15 02:21:23,834 - INFO - type_cnt: 3
+2024-04-15 02:23:47,544 - INFO - Early stopping initiated at epoch 32
+2024-04-15 02:23:47,610 - INFO - Best Eval Loss: 0.5577 Best Eval Accuracy: 0.9958
+2024-04-15 02:23:47,677 - INFO - sheep
+2024-04-15 02:23:47,954 - INFO - type_cnt: 6
+2024-04-15 02:27:26,151 - INFO - Early stopping initiated at epoch 45
+2024-04-15 02:27:26,215 - INFO - Best Eval Loss: 1.0555 Best Eval Accuracy: 0.9906
+2024-04-15 02:27:26,280 - INFO - skate-park
+2024-04-15 02:27:26,556 - INFO - type_cnt: 3
+2024-04-15 02:29:48,004 - INFO - Early stopping initiated at epoch 31
+2024-04-15 02:29:48,071 - INFO - Best Eval Loss: 0.5559 Best Eval Accuracy: 0.9975
+2024-04-15 02:29:48,138 - INFO - snowboard
+2024-04-15 02:29:48,423 - INFO - type_cnt: 3
+2024-04-15 02:32:56,679 - INFO - Early stopping initiated at epoch 40
+2024-04-15 02:32:56,744 - INFO - Best Eval Loss: 0.5608 Best Eval Accuracy: 0.9930
+2024-04-15 02:32:56,808 - INFO - soccerball
+2024-04-15 02:32:57,090 - INFO - type_cnt: 2
+2024-04-15 02:35:27,858 - INFO - Early stopping initiated at epoch 32
+2024-04-15 02:35:27,925 - INFO - Best Eval Loss: 0.3168 Best Eval Accuracy: 0.9983
+2024-04-15 02:35:27,988 - INFO - stroller
+2024-04-15 02:35:28,266 - INFO - type_cnt: 3
+2024-04-15 02:37:52,595 - INFO - Early stopping initiated at epoch 32
+2024-04-15 02:37:52,662 - INFO - Best Eval Loss: 0.5594 Best Eval Accuracy: 0.9941
+2024-04-15 02:37:52,727 - INFO - stunt
+2024-04-15 02:37:53,003 - INFO - type_cnt: 3
+2024-04-15 02:40:32,291 - INFO - Early stopping initiated at epoch 35
+2024-04-15 02:40:32,356 - INFO - Best Eval Loss: 0.5569 Best Eval Accuracy: 0.9968
+2024-04-15 02:40:32,423 - INFO - surf
+2024-04-15 02:40:32,704 - INFO - type_cnt: 4
+2024-04-15 02:43:17,667 - INFO - Early stopping initiated at epoch 37
+2024-04-15 02:43:17,734 - INFO - Best Eval Loss: 0.7509 Best Eval Accuracy: 0.9950
+2024-04-15 02:43:17,798 - INFO - swing
+2024-04-15 02:43:18,083 - INFO - type_cnt: 4
+2024-04-15 02:46:11,890 - INFO - Early stopping initiated at epoch 38
+2024-04-15 02:46:11,959 - INFO - Best Eval Loss: 0.7551 Best Eval Accuracy: 0.9905
+2024-04-15 02:46:12,023 - INFO - tennis
+2024-04-15 02:46:12,304 - INFO - type_cnt: 3
+2024-04-15 02:48:43,622 - INFO - Early stopping initiated at epoch 33
+2024-04-15 02:48:43,688 - INFO - Best Eval Loss: 0.5574 Best Eval Accuracy: 0.9965
+2024-04-15 02:48:43,753 - INFO - tractor-sand
+2024-04-15 02:48:44,032 - INFO - type_cnt: 4
+2024-04-15 02:51:04,626 - INFO - Early stopping initiated at epoch 30
+2024-04-15 02:51:04,694 - INFO - Best Eval Loss: 0.7556 Best Eval Accuracy: 0.9905
+2024-04-15 02:51:04,759 - INFO - train
+2024-04-15 02:51:05,038 - INFO - type_cnt: 5
+2024-04-15 02:54:18,786 - INFO - Early stopping initiated at epoch 42
+2024-04-15 02:54:18,853 - INFO - Best Eval Loss: 0.9145 Best Eval Accuracy: 0.9926
+2024-04-15 02:54:18,919 - INFO - tuk-tuk
+2024-04-15 02:54:19,194 - INFO - type_cnt: 4
+2024-04-15 02:57:30,455 - INFO - Early stopping initiated at epoch 42
+2024-04-15 02:57:30,523 - INFO - Best Eval Loss: 0.7591 Best Eval Accuracy: 0.9856
+2024-04-15 02:57:30,588 - INFO - upside-down
+2024-04-15 02:57:30,870 - INFO - type_cnt: 3
+2024-04-15 03:00:14,189 - INFO - Early stopping initiated at epoch 35
+2024-04-15 03:00:14,318 - INFO - Best Eval Loss: 0.5650 Best Eval Accuracy: 0.9880
+2024-04-15 03:00:14,386 - INFO - varanus-cage
+2024-04-15 03:00:14,661 - INFO - type_cnt: 2
+2024-04-15 03:02:30,486 - INFO - Early stopping initiated at epoch 29
+2024-04-15 03:02:30,551 - INFO - Best Eval Loss: 0.3198 Best Eval Accuracy: 0.9950
+2024-04-15 03:02:30,616 - INFO - walking
+2024-04-15 03:02:30,894 - INFO - type_cnt: 3
+2024-04-15 03:04:38,255 - INFO - Early stopping initiated at epoch 28
+2024-04-15 03:04:38,320 - INFO - Best Eval Loss: 0.5576 Best Eval Accuracy: 0.9960
+2024-04-15 03:04:38,384 - INFO - Average Best Accuracy: 0.9938
+2024-04-15 03:04:38,386 - INFO - Start of the program
+2024-04-15 03:04:38,386 - INFO - bike-packing
+2024-04-15 03:04:38,682 - INFO - type_cnt: 3
+2024-04-15 03:07:43,156 - INFO - Early stopping initiated at epoch 39
+2024-04-15 03:07:43,223 - INFO - Best Eval Loss: 0.5705 Best Eval Accuracy: 0.9835
+2024-04-15 03:07:43,290 - INFO - blackswan
+2024-04-15 03:07:43,570 - INFO - type_cnt: 2
+2024-04-15 03:09:47,864 - INFO - Early stopping initiated at epoch 27
+2024-04-15 03:09:47,930 - INFO - Best Eval Loss: 0.3192 Best Eval Accuracy: 0.9968
+2024-04-15 03:09:47,994 - INFO - bmx-trees
+2024-04-15 03:09:48,276 - INFO - type_cnt: 3
+2024-04-15 03:12:25,007 - INFO - Early stopping initiated at epoch 35
+2024-04-15 03:12:25,076 - INFO - Best Eval Loss: 0.5638 Best Eval Accuracy: 0.9894
+2024-04-15 03:12:25,142 - INFO - breakdance
+2024-04-15 03:12:25,426 - INFO - type_cnt: 2
+2024-04-15 03:15:15,305 - INFO - Early stopping initiated at epoch 37
+2024-04-15 03:15:15,371 - INFO - Best Eval Loss: 0.3187 Best Eval Accuracy: 0.9964
+2024-04-15 03:15:15,436 - INFO - camel
+2024-04-15 03:15:15,721 - INFO - type_cnt: 2
+2024-04-15 03:17:31,163 - INFO - Early stopping initiated at epoch 29
+2024-04-15 03:17:31,231 - INFO - Best Eval Loss: 0.3210 Best Eval Accuracy: 0.9938
+2024-04-15 03:17:31,295 - INFO - car-roundabout
+2024-04-15 03:17:31,569 - INFO - type_cnt: 2
+2024-04-15 03:19:30,795 - INFO - Early stopping initiated at epoch 26
+2024-04-15 03:19:30,861 - INFO - Best Eval Loss: 0.3169 Best Eval Accuracy: 0.9977
+2024-04-15 03:19:30,926 - INFO - car-shadow
+2024-04-15 03:19:31,204 - INFO - type_cnt: 2
+2024-04-15 03:21:12,204 - INFO - Early stopping initiated at epoch 22
+2024-04-15 03:21:12,273 - INFO - Best Eval Loss: 0.3175 Best Eval Accuracy: 0.9976
+2024-04-15 03:21:12,337 - INFO - cows
+2024-04-15 03:21:12,620 - INFO - type_cnt: 2
+2024-04-15 03:23:11,410 - INFO - Early stopping initiated at epoch 25
+2024-04-15 03:23:11,474 - INFO - Best Eval Loss: 0.3218 Best Eval Accuracy: 0.9934
+2024-04-15 03:23:11,540 - INFO - dance-twirl
+2024-04-15 03:23:11,816 - INFO - type_cnt: 2
+2024-04-15 03:25:39,808 - INFO - Early stopping initiated at epoch 32
+2024-04-15 03:25:39,874 - INFO - Best Eval Loss: 0.3194 Best Eval Accuracy: 0.9953
+2024-04-15 03:25:39,941 - INFO - dog
+2024-04-15 03:25:40,221 - INFO - type_cnt: 2
+2024-04-15 03:27:57,022 - INFO - Early stopping initiated at epoch 30
+2024-04-15 03:27:57,087 - INFO - Best Eval Loss: 0.3187 Best Eval Accuracy: 0.9960
+2024-04-15 03:27:57,150 - INFO - dogs-jump
+2024-04-15 03:27:57,426 - INFO - type_cnt: 4
+2024-04-15 03:31:06,264 - INFO - Early stopping initiated at epoch 42
+2024-04-15 03:31:06,327 - INFO - Best Eval Loss: 0.7489 Best Eval Accuracy: 0.9971
+2024-04-15 03:31:06,391 - INFO - drift-chicane
+2024-04-15 03:31:06,667 - INFO - type_cnt: 2
+2024-04-15 03:33:08,021 - INFO - Early stopping initiated at epoch 27
+2024-04-15 03:33:08,088 - INFO - Best Eval Loss: 0.3165 Best Eval Accuracy: 0.9989
+2024-04-15 03:33:08,151 - INFO - drift-straight
+2024-04-15 03:33:08,431 - INFO - type_cnt: 2
+2024-04-15 03:35:15,379 - INFO - Early stopping initiated at epoch 28
+2024-04-15 03:35:15,445 - INFO - Best Eval Loss: 0.3160 Best Eval Accuracy: 0.9993
+2024-04-15 03:35:15,508 - INFO - goat
+2024-04-15 03:35:15,783 - INFO - type_cnt: 2
+2024-04-15 03:37:22,682 - INFO - Early stopping initiated at epoch 27
+2024-04-15 03:37:22,750 - INFO - Best Eval Loss: 0.3200 Best Eval Accuracy: 0.9945
+2024-04-15 03:37:22,814 - INFO - gold-fish
+2024-04-15 03:37:23,094 - INFO - type_cnt: 6
+2024-04-15 03:40:50,436 - INFO - Early stopping initiated at epoch 46
+2024-04-15 03:40:50,502 - INFO - Best Eval Loss: 1.0592 Best Eval Accuracy: 0.9877
+2024-04-15 03:40:50,565 - INFO - horsejump-high
+2024-04-15 03:40:50,840 - INFO - type_cnt: 3
+2024-04-15 03:43:26,031 - INFO - Early stopping initiated at epoch 34
+2024-04-15 03:43:26,101 - INFO - Best Eval Loss: 0.5617 Best Eval Accuracy: 0.9917
+2024-04-15 03:43:26,167 - INFO - india
+2024-04-15 03:43:26,446 - INFO - type_cnt: 4
+2024-04-15 03:46:16,071 - INFO - Early stopping initiated at epoch 37
+2024-04-15 03:46:16,140 - INFO - Best Eval Loss: 0.7578 Best Eval Accuracy: 0.9893
+2024-04-15 03:46:16,204 - INFO - judo
+2024-04-15 03:46:16,485 - INFO - type_cnt: 3
+2024-04-15 03:49:15,559 - INFO - Early stopping initiated at epoch 40
+2024-04-15 03:49:15,625 - INFO - Best Eval Loss: 0.5598 Best Eval Accuracy: 0.9939
+2024-04-15 03:49:15,692 - INFO - kite-surf
+2024-04-15 03:49:15,970 - INFO - type_cnt: 4
+2024-04-15 03:51:49,563 - INFO - Early stopping initiated at epoch 34
+2024-04-15 03:51:49,630 - INFO - Best Eval Loss: 0.7557 Best Eval Accuracy: 0.9900
+2024-04-15 03:51:49,694 - INFO - lab-coat
+2024-04-15 03:51:49,975 - INFO - type_cnt: 6
+2024-04-15 03:54:30,257 - INFO - Early stopping initiated at epoch 34
+2024-04-15 03:54:30,324 - INFO - Best Eval Loss: 1.0519 Best Eval Accuracy: 0.9947
+2024-04-15 03:54:30,391 - INFO - libby
+2024-04-15 03:54:30,666 - INFO - type_cnt: 2
+2024-04-15 03:57:10,071 - INFO - Early stopping initiated at epoch 35
+2024-04-15 03:57:10,136 - INFO - Best Eval Loss: 0.3181 Best Eval Accuracy: 0.9968
+2024-04-15 03:57:10,202 - INFO - loading
+2024-04-15 03:57:10,484 - INFO - type_cnt: 4
+2024-04-15 04:00:29,470 - INFO - Early stopping initiated at epoch 43
+2024-04-15 04:00:29,537 - INFO - Best Eval Loss: 0.7534 Best Eval Accuracy: 0.9927
+2024-04-15 04:00:29,601 - INFO - mbike-trick
+2024-04-15 04:00:29,882 - INFO - type_cnt: 3
+2024-04-15 04:03:00,229 - INFO - Early stopping initiated at epoch 33
+2024-04-15 04:03:00,298 - INFO - Best Eval Loss: 0.5560 Best Eval Accuracy: 0.9979
+2024-04-15 04:03:00,363 - INFO - motocross-jump
+2024-04-15 04:03:00,640 - INFO - type_cnt: 3
+2024-04-15 04:05:24,380 - INFO - Early stopping initiated at epoch 32
+2024-04-15 04:05:24,445 - INFO - Best Eval Loss: 0.5557 Best Eval Accuracy: 0.9977
+2024-04-15 04:05:24,511 - INFO - paragliding-launch
+2024-04-15 04:05:24,787 - INFO - type_cnt: 4
+2024-04-15 04:08:29,689 - INFO - Early stopping initiated at epoch 40
+2024-04-15 04:08:29,755 - INFO - Best Eval Loss: 0.7588 Best Eval Accuracy: 0.9873
+2024-04-15 04:08:29,819 - INFO - parkour
+2024-04-15 04:08:30,095 - INFO - type_cnt: 2
+2024-04-15 04:10:33,546 - INFO - Early stopping initiated at epoch 27
+2024-04-15 04:10:33,614 - INFO - Best Eval Loss: 0.3183 Best Eval Accuracy: 0.9973
+2024-04-15 04:10:33,680 - INFO - pigs
+2024-04-15 04:10:33,955 - INFO - type_cnt: 4
+2024-04-15 04:12:52,434 - INFO - Early stopping initiated at epoch 30
+2024-04-15 04:12:52,503 - INFO - Best Eval Loss: 0.7574 Best Eval Accuracy: 0.9896
+2024-04-15 04:12:52,568 - INFO - scooter-black
+2024-04-15 04:12:52,848 - INFO - type_cnt: 3
+2024-04-15 04:15:47,084 - INFO - Early stopping initiated at epoch 38
+2024-04-15 04:15:47,151 - INFO - Best Eval Loss: 0.5565 Best Eval Accuracy: 0.9973
+2024-04-15 04:15:47,217 - INFO - shooting
+2024-04-15 04:15:47,587 - INFO - type_cnt: 4
+2024-04-15 04:18:45,734 - INFO - Early stopping initiated at epoch 38
+2024-04-15 04:18:45,802 - INFO - Best Eval Loss: 0.7562 Best Eval Accuracy: 0.9910
+2024-04-15 04:18:45,866 - INFO - soapbox
+2024-04-15 04:18:46,141 - INFO - type_cnt: 4
+2024-04-15 04:21:27,170 - INFO - Early stopping initiated at epoch 35
+2024-04-15 04:21:27,236 - INFO - Best Eval Loss: 0.7493 Best Eval Accuracy: 0.9961
+2024-04-15 04:21:27,302 - INFO - Average Best Accuracy: 0.9940
+2024-04-15 04:21:27,303 - INFO - Start of the program
+2024-04-15 04:21:27,303 - INFO - aerobatics
+2024-04-15 04:21:27,579 - INFO - type_cnt: 4
+2024-04-15 04:24:41,927 - INFO - Early stopping initiated at epoch 43
+2024-04-15 04:24:41,994 - INFO - Best Eval Loss: 0.7628 Best Eval Accuracy: 0.9836
+2024-04-15 04:24:42,059 - INFO - car-race
+2024-04-15 04:24:42,334 - INFO - type_cnt: 5
+2024-04-15 04:27:49,543 - INFO - Early stopping initiated at epoch 42
+2024-04-15 04:27:49,609 - INFO - Best Eval Loss: 0.9191 Best Eval Accuracy: 0.9892
+2024-04-15 04:27:49,677 - INFO - carousel
+2024-04-15 04:27:49,958 - INFO - type_cnt: 5
+2024-04-15 04:30:57,564 - INFO - Early stopping initiated at epoch 39
+2024-04-15 04:30:57,631 - INFO - Best Eval Loss: 0.9225 Best Eval Accuracy: 0.9859
+2024-04-15 04:30:57,697 - INFO - cats-car
+2024-04-15 04:30:57,991 - INFO - type_cnt: 5
+2024-04-15 04:34:04,084 - INFO - Early stopping initiated at epoch 40
+2024-04-15 04:34:04,150 - INFO - Best Eval Loss: 0.9156 Best Eval Accuracy: 0.9927
+2024-04-15 04:34:04,216 - INFO - chamaleon
+2024-04-15 04:34:04,493 - INFO - type_cnt: 2
+2024-04-15 04:36:20,191 - INFO - Early stopping initiated at epoch 29
+2024-04-15 04:36:20,259 - INFO - Best Eval Loss: 0.3209 Best Eval Accuracy: 0.9941
+2024-04-15 04:36:20,326 - INFO - deer
+2024-04-15 04:36:20,609 - INFO - type_cnt: 3
+2024-04-15 04:39:23,735 - INFO - Early stopping initiated at epoch 41
+2024-04-15 04:39:23,804 - INFO - Best Eval Loss: 0.5654 Best Eval Accuracy: 0.9878
+2024-04-15 04:39:23,870 - INFO - giant-slalom
+2024-04-15 04:39:24,149 - INFO - type_cnt: 4
+2024-04-15 04:42:09,021 - INFO - Early stopping initiated at epoch 37
+2024-04-15 04:42:09,087 - INFO - Best Eval Loss: 0.7478 Best Eval Accuracy: 0.9980
+2024-04-15 04:42:09,154 - INFO - girl-dog
+2024-04-15 04:42:09,436 - INFO - type_cnt: 4
+2024-04-15 04:45:14,353 - INFO - Early stopping initiated at epoch 39
+2024-04-15 04:45:14,421 - INFO - Best Eval Loss: 0.7634 Best Eval Accuracy: 0.9826
+2024-04-15 04:45:14,486 - INFO - golf
+2024-04-15 04:45:14,765 - INFO - type_cnt: 4
+2024-04-15 04:48:21,138 - INFO - Early stopping initiated at epoch 39
+2024-04-15 04:48:21,207 - INFO - Best Eval Loss: 0.7553 Best Eval Accuracy: 0.9905
+2024-04-15 04:48:21,271 - INFO - guitar-violin
+2024-04-15 04:48:21,549 - INFO - type_cnt: 5
+2024-04-15 04:51:25,121 - INFO - Early stopping initiated at epoch 41
+2024-04-15 04:51:25,187 - INFO - Best Eval Loss: 0.9221 Best Eval Accuracy: 0.9856
+2024-04-15 04:51:25,254 - INFO - gym
+2024-04-15 04:51:25,529 - INFO - type_cnt: 5
+2024-04-15 04:55:49,629 - INFO - Early stopping initiated at epoch 59
+2024-04-15 04:55:49,696 - INFO - Best Eval Loss: 0.9161 Best Eval Accuracy: 0.9915
+2024-04-15 04:55:49,763 - INFO - helicopter
+2024-04-15 04:55:50,043 - INFO - type_cnt: 3
+2024-04-15 04:58:28,196 - INFO - Early stopping initiated at epoch 35
+2024-04-15 04:58:28,261 - INFO - Best Eval Loss: 0.5607 Best Eval Accuracy: 0.9930
+2024-04-15 04:58:28,327 - INFO - horsejump-stick
+2024-04-15 04:58:28,610 - INFO - type_cnt: 4
+2024-04-15 05:01:13,105 - INFO - Early stopping initiated at epoch 35
+2024-04-15 05:01:13,174 - INFO - Best Eval Loss: 0.7543 Best Eval Accuracy: 0.9925
+2024-04-15 05:01:13,240 - INFO - hoverboard
+2024-04-15 05:01:13,518 - INFO - type_cnt: 3
+2024-04-15 05:03:55,399 - INFO - Early stopping initiated at epoch 36
+2024-04-15 05:03:55,466 - INFO - Best Eval Loss: 0.5566 Best Eval Accuracy: 0.9970
+2024-04-15 05:03:55,531 - INFO - lock
+2024-04-15 05:03:55,812 - INFO - type_cnt: 5
+2024-04-15 05:06:42,157 - INFO - Early stopping initiated at epoch 37
+2024-04-15 05:06:42,225 - INFO - Best Eval Loss: 0.9189 Best Eval Accuracy: 0.9886
+2024-04-15 05:06:42,290 - INFO - man-bike
+2024-04-15 05:06:42,565 - INFO - type_cnt: 3
+2024-04-15 05:09:20,083 - INFO - Early stopping initiated at epoch 36
+2024-04-15 05:09:20,149 - INFO - Best Eval Loss: 0.5666 Best Eval Accuracy: 0.9871
+2024-04-15 05:09:20,218 - INFO - monkeys-trees
+2024-04-15 05:09:20,498 - INFO - type_cnt: 3
+2024-04-15 05:11:37,123 - INFO - Early stopping initiated at epoch 28
+2024-04-15 05:11:37,190 - INFO - Best Eval Loss: 0.5560 Best Eval Accuracy: 0.9977
+2024-04-15 05:11:37,255 - INFO - mtb-race
+2024-04-15 05:11:37,535 - INFO - type_cnt: 5
+2024-04-15 05:15:00,823 - INFO - Early stopping initiated at epoch 43
+2024-04-15 05:15:00,889 - INFO - Best Eval Loss: 0.9184 Best Eval Accuracy: 0.9888
+2024-04-15 05:15:00,953 - INFO - orchid
+2024-04-15 05:15:01,232 - INFO - type_cnt: 3
+2024-04-15 05:17:46,264 - INFO - Early stopping initiated at epoch 36
+2024-04-15 05:17:46,333 - INFO - Best Eval Loss: 0.5616 Best Eval Accuracy: 0.9918
+2024-04-15 05:17:46,399 - INFO - people-sunset
+2024-04-15 05:17:46,678 - INFO - type_cnt: 5
+2024-04-15 05:21:01,647 - INFO - Early stopping initiated at epoch 44
+2024-04-15 05:21:01,713 - INFO - Best Eval Loss: 0.9167 Best Eval Accuracy: 0.9911
+2024-04-15 05:21:01,778 - INFO - planes-crossing
+2024-04-15 05:21:02,055 - INFO - type_cnt: 3
+2024-04-15 05:23:07,811 - INFO - Early stopping initiated at epoch 28
+2024-04-15 05:23:07,880 - INFO - Best Eval Loss: 0.5609 Best Eval Accuracy: 0.9925
+2024-04-15 05:23:07,945 - INFO - rollercoaster
+2024-04-15 05:23:08,219 - INFO - type_cnt: 2
+2024-04-15 05:25:25,624 - INFO - Early stopping initiated at epoch 30
+2024-04-15 05:25:25,690 - INFO - Best Eval Loss: 0.3191 Best Eval Accuracy: 0.9962
+2024-04-15 05:25:25,754 - INFO - salsa
+2024-04-15 05:25:26,032 - INFO - type_cnt: 11
+2024-04-15 05:29:47,096 - INFO - Early stopping initiated at epoch 54
+2024-04-15 05:29:47,162 - INFO - Best Eval Loss: 1.5783 Best Eval Accuracy: 0.9734
+2024-04-15 05:29:47,228 - INFO - seasnake
+2024-04-15 05:29:47,506 - INFO - type_cnt: 2
+2024-04-15 05:32:19,760 - INFO - Early stopping initiated at epoch 32
+2024-04-15 05:32:19,826 - INFO - Best Eval Loss: 0.3164 Best Eval Accuracy: 0.9984
+2024-04-15 05:32:19,892 - INFO - skate-jump
+2024-04-15 05:32:20,189 - INFO - type_cnt: 3
+2024-04-15 05:34:55,263 - INFO - Early stopping initiated at epoch 33
+2024-04-15 05:34:55,330 - INFO - Best Eval Loss: 0.5556 Best Eval Accuracy: 0.9986
+2024-04-15 05:34:55,393 - INFO - slackline
+2024-04-15 05:34:55,759 - INFO - type_cnt: 2
+2024-04-15 05:37:22,910 - INFO - Early stopping initiated at epoch 30
+2024-04-15 05:37:22,975 - INFO - Best Eval Loss: 0.3196 Best Eval Accuracy: 0.9955
+2024-04-15 05:37:23,040 - INFO - subway
+2024-04-15 05:37:23,317 - INFO - type_cnt: 5
+2024-04-15 05:40:44,778 - INFO - Early stopping initiated at epoch 45
+2024-04-15 05:40:44,844 - INFO - Best Eval Loss: 0.9166 Best Eval Accuracy: 0.9906
+2024-04-15 05:40:44,910 - INFO - tandem
+2024-04-15 05:40:45,188 - INFO - type_cnt: 5
+2024-04-15 05:44:04,085 - INFO - Early stopping initiated at epoch 43
+2024-04-15 05:44:04,151 - INFO - Best Eval Loss: 0.9314 Best Eval Accuracy: 0.9763
+2024-04-15 05:44:04,216 - INFO - tennis-vest
+2024-04-15 05:44:04,498 - INFO - type_cnt: 3
+2024-04-15 05:47:11,761 - INFO - Early stopping initiated at epoch 41
+2024-04-15 05:47:11,829 - INFO - Best Eval Loss: 0.5569 Best Eval Accuracy: 0.9966
+2024-04-15 05:47:11,896 - INFO - tractor
+2024-04-15 05:47:12,171 - INFO - type_cnt: 3
+2024-04-15 05:49:56,066 - INFO - Early stopping initiated at epoch 36
+2024-04-15 05:49:56,132 - INFO - Best Eval Loss: 0.5619 Best Eval Accuracy: 0.9909
+2024-04-15 05:49:56,202 - INFO - Average Best Accuracy: 0.9906
